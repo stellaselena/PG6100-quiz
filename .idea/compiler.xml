@@ -9,6 +9,7 @@
         <module name="player" />
         <module name="quiz" />
         <module name="schema" />
+        <module name="subcategory" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +17,7 @@
       <module name="player" target="1.8" />
       <module name="quiz" target="1.8" />
       <module name="schema" target="1.8" />
+      <module name="subcategory" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

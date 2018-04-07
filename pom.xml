@@ -12,6 +12,7 @@
         <module>schema</module>
         <module>player</module>
         <module>quiz</module>
+        <module>subcategory</module>
     </modules>
 
     <properties>

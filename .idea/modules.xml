@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/player/player.iml" filepath="$PROJECT_DIR$/player/player.iml" />
       <module fileurl="file://$PROJECT_DIR$/quiz/quiz.iml" filepath="$PROJECT_DIR$/quiz/quiz.iml" />
       <module fileurl="file://$PROJECT_DIR$/schema/schema.iml" filepath="$PROJECT_DIR$/schema/schema.iml" />
+      <module fileurl="file://$PROJECT_DIR$/subcategory/subcategory.iml" filepath="$PROJECT_DIR$/subcategory/subcategory.iml" />
     </modules>
   </component>
 </project>
