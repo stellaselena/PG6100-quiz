@@ -31,8 +31,8 @@ class PlayerController {
     @Autowired
     private lateinit var rest: RestTemplate
 
-//    @Value("\${quizServerName}")
-//    private lateinit var quizHost : String
+    @Value("\${quizServerName}")
+    private lateinit var quizHost : String
 
     @RabbitListener(queues = arrayOf("#{queue.name}"))
     fun createPlayerRabbit(playerDto: PlayerDto) {
@@ -83,44 +83,44 @@ class PlayerController {
         }
     }
 
-//    @ApiOperation("Adds quizzes to player")
-//    @PostMapping(path = arrayOf("/{id}/items"), consumes = arrayOf(MediaType.APPLICATION_JSON_UTF8_VALUE))
-//    @ApiResponses(
-//            ApiResponse(code = 200, message = "Item was successfully added to Player"),
-//            ApiResponse(code = 400, message = "Item-id sent in body is not correct"),
-//            ApiResponse(code = 404, message = "Could not find player or item with specified id")
-//
-//    )
-//    fun addQuizToPlayer(
-//            @PathVariable("id")
-//            id: Long,
-//            @RequestBody
-//            quizDto: QuizDto): ResponseEntity<Void> {
-//
-//
-//        if(!repo.exists(id)) {
-//            return ResponseEntity.status(404).build()
-//        }
-//
-//        // check if item id exists
-//        val itemURL = "${quizHost}/quizzes/${quizDto.id}"
-//        val response: ResponseEntity<QuizDto> = try {
-//            rest.getForEntity(itemURL, QuizDto::class.java)
-//        } catch (e: HttpClientErrorException) {
-//            return ResponseEntity.status(404).build()
-//        }
-//
-//        if (quizDto.id == null || response.statusCodeValue != 200) {
-//            return ResponseEntity.status(400).build()
-//        }
-//
-//        if (repo.addQuiz(id, quizDto.id!!.toLong())) {
-//            return ResponseEntity.status(200).build()
-//        } else {
-//            return ResponseEntity.status(400).build()
-//        }
-//
-//    }
+    @ApiOperation("Adds quizzes to player")
+    @PostMapping(path = arrayOf("/{id}/quizzes"), consumes = arrayOf(MediaType.APPLICATION_JSON_UTF8_VALUE))
+    @ApiResponses(
+            ApiResponse(code = 200, message = "Quiz was successfully added to Player"),
+            ApiResponse(code = 400, message = "Quiz-id sent in body is not correct"),
+            ApiResponse(code = 404, message = "Could not find id or quiz with specified id")
+
+    )
+    fun addQuizToPlayer(
+            @PathVariable("id")
+            id: Long,
+            @RequestBody
+            quizDto: QuizDto): ResponseEntity<Void> {
+
+
+        if(!repo.exists(id)) {
+            return ResponseEntity.status(404).build()
+        }
+
+        // check if item id exists
+        val itemURL = "${quizHost}/quizzes/${quizDto.id}"
+        val response: ResponseEntity<QuizDto> = try {
+            rest.getForEntity(itemURL, QuizDto::class.java)
+        } catch (e: HttpClientErrorException) {
+            return ResponseEntity.status(404).build()
+        }
+
+        if (quizDto.id == null || response.statusCodeValue != 200) {
+            return ResponseEntity.status(400).build()
+        }
+
+        if (repo.addQuiz(id, quizDto.id!!.toLong())) {
+            return ResponseEntity.status(200).build()
+        } else {
+            return ResponseEntity.status(400).build()
+        }
+
+    }
 
 
     @ApiOperation("Get player specified by id")
