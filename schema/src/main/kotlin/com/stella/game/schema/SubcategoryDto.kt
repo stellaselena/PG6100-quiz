@@ -1,6 +1,7 @@
 package com.stella.game.schema
 
 import io.swagger.annotations.ApiModelProperty
+import java.io.Serializable
 
 data class SubcategoryDto(
 
@@ -14,4 +15,4 @@ data class SubcategoryDto(
         @ApiModelProperty("The category of the subcategory")
         var category: Long? = null
 
-)
+) : Serializable

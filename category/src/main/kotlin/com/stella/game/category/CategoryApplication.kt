@@ -7,6 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @SpringBootApplication(scanBasePackages = arrayOf("com.stella.game.category"))
 @EnableEurekaClient
+
 class Application : WebMvcConfigurerAdapter() {}
 
 fun main(args: Array<String>) {

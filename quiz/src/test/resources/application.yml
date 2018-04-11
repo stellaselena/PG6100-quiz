@@ -1,2 +1,3 @@
 server:
   port: 7083
+subcategoryServerName: http://localhost:8082

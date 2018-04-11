@@ -9,6 +9,8 @@ eureka:
 spring:
   application:
     name: quiz-server
+     rabbitmq:
+        host: rabbitmq
   datasource:
     url: "jdbc:postgresql://postgres-item:5432/postgres"
     username: "postgres"
@@ -20,3 +22,5 @@ spring:
       ddl-auto: "update"
 server:
   port: 8080
+
+subcategoryServerName: http://subcategory-server

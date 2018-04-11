@@ -7,7 +7,7 @@ eureka:
 
 spring:
   application:
-    name: quiz-server
+    name: subcategory-server
   datasource:
     url: "jdbc:h2:mem:"
     driver-class-name: "org.h2.Driver"
@@ -17,4 +17,6 @@ spring:
       ddl-auto: "create-drop"
 
 server:
-  port: 8083
+  port: 8082
+
+categoryServerName: http://localhost:8084

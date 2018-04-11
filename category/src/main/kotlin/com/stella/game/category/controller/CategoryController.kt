@@ -22,6 +22,7 @@ import javax.validation.ConstraintViolationException
         produces = arrayOf(MediaType.APPLICATION_JSON_UTF8_VALUE)
 )
 @Validated
+
 class CategoryApi {
 
     @Autowired

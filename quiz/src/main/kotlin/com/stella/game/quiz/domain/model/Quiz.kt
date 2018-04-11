@@ -1,6 +1,7 @@
 package com.stella.game.quiz.domain.model
 
 import org.hibernate.validator.constraints.NotBlank
+import org.hibernate.validator.constraints.Range
 import javax.persistence.*
 import javax.validation.constraints.NotNull
 import javax.validation.constraints.Size
@@ -18,7 +19,7 @@ data class Quiz(
         @get:NotNull
         var correctAnswer: Int,
 
-        @get:NotNull
+        @get:Range(min = 0, max = 100)
         var subcategoryId: Long,
 
         @get:Id @get:GeneratedValue

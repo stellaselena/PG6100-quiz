@@ -2,6 +2,7 @@ package com.stella.game.subcategory.domain.model
 
 import com.fasterxml.jackson.annotation.JsonBackReference
 import org.hibernate.validator.constraints.NotBlank
+import org.hibernate.validator.constraints.Range
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
 import javax.persistence.Id
@@ -14,9 +15,8 @@ data class Subcategory (
         @get:Size(max = 32)
         var name: String,
 
-//        @get:ManyToOne(fetch = FetchType.EAGER)
-        @get:NotNull
-        @JsonBackReference
+        @get:Range(min = 0, max = 100)
+//       @JsonBackReference
         var category: Long,
 
         @get:Id

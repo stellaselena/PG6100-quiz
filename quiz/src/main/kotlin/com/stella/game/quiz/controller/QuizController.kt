@@ -14,6 +14,13 @@ import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.util.UriComponentsBuilder
 import javax.validation.ConstraintViolationException
+import com.netflix.hystrix.HystrixCommand
+import com.netflix.hystrix.HystrixCommandGroupKey
+import com.stella.game.schema.SubcategoryDto
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient
+import org.springframework.cloud.netflix.ribbon.RibbonClient
+import org.springframework.web.client.HttpClientErrorException
+import org.springframework.web.client.RestTemplate
 
 @Api(value = "/quizzes", description = "Handling of creating and retrieving quizzes")
 @RequestMapping(
@@ -22,10 +29,17 @@ import javax.validation.ConstraintViolationException
 )
 @RestController
 @Validated
+@EnableEurekaClient
 class QuizController {
 
     @Autowired
+    private lateinit var rest: RestTemplate
+
+    @Value("\${subcategoryServerName}")
+    private lateinit var subcategoryHost : String
+    @Autowired
     private lateinit var repo: QuizRepository
+
 
     @ApiOperation("Get all the quizzes")
     @GetMapping
@@ -83,6 +97,23 @@ class QuizController {
             return ResponseEntity.status(400).build()
         }
 
+        //todo add this to subcategory
+        //todo write wiremock tests
+        //todo check for correct server configuration
+        //todo add hystrix
+
+        // check if subcategory id exists
+        val itemURL = "${subcategoryHost}/subcategories/${dto.subcategoryId}"
+        val response: ResponseEntity<SubcategoryDto> = try {
+            rest.getForEntity(itemURL, SubcategoryDto::class.java)
+        } catch (e: HttpClientErrorException) {
+            return ResponseEntity.status(404).build()
+        }
+
+        if (response.statusCodeValue != 200) {
+            return ResponseEntity.status(400).build()
+        }
+
         val id: Long?
         try {
             id = repo.createQuiz(dto.question!!, dto.answers!!, dto.correctAnswer!!, dto.subcategoryId!!)
@@ -96,6 +127,7 @@ class QuizController {
 
         return ResponseEntity.status(201).body(id)
     }
+
 
     @ApiOperation("Delete a quiz with the given id")
     @DeleteMapping(path = arrayOf("/{id}"))
@@ -282,5 +314,7 @@ class QuizController {
         return ResponseEntity.status(404).build()
 
     }
+
+
 
 }

@@ -6,8 +6,10 @@ import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
 import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.boot.web.client.RestTemplateBuilder
+import org.springframework.cloud.client.loadbalancer.LoadBalanced
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.context.annotation.Profile
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder
 import org.springframework.web.client.RestTemplate
@@ -36,7 +38,7 @@ class SubcategoryApplicationConfig {
     private fun apiInfo(): ApiInfo {
         return ApiInfoBuilder()
                 .title("API for entity items")
-                .description("Micro-service for Subcategory entity. This entity represents equipment for users.")
+                .description("Micro-service for Subcategory entity.")
                 .version("1.0")
                 .build()
     }
@@ -50,9 +52,17 @@ class SubcategoryApplicationConfig {
                 .build()
     }
 
+    @LoadBalanced
     @Bean
-    fun restTemplate(restTemplateBuilder: RestTemplateBuilder): RestTemplate {
-        return restTemplateBuilder.build()
+    @Profile("docker")
+    fun restTemplateBalancer(): RestTemplate {
+        return RestTemplate()
+    }
+
+    @Bean
+    @Profile("!docker")
+    fun restTemplate() : RestTemplate {
+        return RestTemplate()
     }
 
 }

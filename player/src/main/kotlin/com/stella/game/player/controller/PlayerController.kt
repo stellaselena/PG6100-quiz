@@ -1,5 +1,7 @@
 package com.stella.game.player.controller
 
+import com.netflix.hystrix.HystrixCommand
+import com.netflix.hystrix.HystrixCommandGroupKey
 import com.stella.game.player.repository.PlayerRepository
 import com.stella.game.player.domain.converter.PlayerConverter
 import com.stella.game.schema.PlayerDto
@@ -8,12 +10,14 @@ import io.swagger.annotations.*
 import org.springframework.amqp.rabbit.annotation.RabbitListener
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
 import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.client.HttpClientErrorException
 import org.springframework.web.client.RestTemplate
+import java.net.URI
 import javax.validation.ConstraintViolationException
 
 @Api(value = "/players", description = "API for player entities")
@@ -85,6 +89,7 @@ class PlayerController {
 
     @ApiOperation("Adds quizzes to player")
     @PostMapping(path = arrayOf("/{id}/quizzes"), consumes = arrayOf(MediaType.APPLICATION_JSON_UTF8_VALUE))
+
     @ApiResponses(
             ApiResponse(code = 200, message = "Quiz was successfully added to Player"),
             ApiResponse(code = 400, message = "Quiz-id sent in body is not correct"),
@@ -121,7 +126,6 @@ class PlayerController {
         }
 
     }
-
 
     @ApiOperation("Get player specified by id")
     @GetMapping(path = arrayOf("/{id}"))

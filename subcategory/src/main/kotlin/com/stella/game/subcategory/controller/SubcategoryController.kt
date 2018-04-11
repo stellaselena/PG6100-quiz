@@ -1,16 +1,21 @@
 package com.stella.game.subcategory.controller
 
+import com.stella.game.schema.CategoryDto
 import com.stella.game.schema.SubcategoryDto
 import com.stella.game.subcategory.domain.converter.SubcategoryConverter
 import com.stella.game.subcategory.repository.SubcategoryRepository
 import io.swagger.annotations.*
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient
+import org.springframework.cloud.netflix.ribbon.RibbonClient
 import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
 import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.*
+import org.springframework.web.client.HttpClientErrorException
+import org.springframework.web.client.RestTemplate
 import org.springframework.web.util.UriComponentsBuilder
 import java.lang.Deprecated
 import javax.validation.ConstraintViolationException
@@ -25,9 +30,13 @@ import javax.validation.ConstraintViolationException
 class SubcategoryApi {
 
     @Autowired
+    private lateinit var rest: RestTemplate
+
+    @Autowired
     private lateinit var repo: SubcategoryRepository
 
-
+    @Value("\${categoryServerName}")
+    private lateinit var categoryHost : String
 
     @ApiOperation("Get all the subcategories")
     @GetMapping
@@ -50,6 +59,18 @@ class SubcategoryApi {
         }
 
         if (dto.name == null || dto.category == null ) {
+            return ResponseEntity.status(400).build()
+        }
+
+        // check if subcategory id exists
+        val itemURL = "${categoryHost}/categories/${dto.category}"
+        val response: ResponseEntity<CategoryDto> = try {
+            rest.getForEntity(itemURL, CategoryDto::class.java)
+        } catch (e: HttpClientErrorException) {
+            return ResponseEntity.status(404).build()
+        }
+
+        if (response.statusCodeValue != 200) {
             return ResponseEntity.status(400).build()
         }
 
@@ -99,7 +120,6 @@ class SubcategoryApi {
 
 
 
-        return ResponseEntity.status(204).build()
     }
 
 

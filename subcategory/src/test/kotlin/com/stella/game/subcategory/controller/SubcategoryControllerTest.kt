@@ -1,5 +1,7 @@
 package com.stella.game.subcategory.controller
 
+import com.github.tomakehurst.wiremock.client.WireMock
+import com.stella.game.schema.CategoryDto
 import com.stella.game.schema.SubcategoryDto
 import io.restassured.RestAssured
 import io.restassured.http.ContentType
@@ -7,7 +9,28 @@ import org.hamcrest.CoreMatchers
 import org.junit.Assert
 import org.junit.Test
 
-class SubcategoryControllerTest : TestBase() {
+class SubcategoryControllerTest : WiremockTestBase() {
+
+    fun getSubcategoryDto(): SubcategoryDto {
+        wiremockServerItem.stubFor(
+                WireMock.get(WireMock.urlMatching(".*/categories/1"))
+                        .willReturn(
+                                WireMock.aResponse()
+                                        .withStatus(200)))
+
+        val category = CategoryDto(id = "1", name = "sports")
+
+        return SubcategoryDto(null, "tennis", category.id!!.toLong())
+    }
+
+    fun postNewSubcategory(dto: SubcategoryDto): Long {
+        return RestAssured.given().contentType(ContentType.JSON)
+                .body(dto)
+                .post()
+                .then()
+                .statusCode(201)
+                .extract().`as`(Long::class.java)
+    }
     @Test
     fun testCleanDB() {
         RestAssured.given().get().then()
@@ -16,7 +39,7 @@ class SubcategoryControllerTest : TestBase() {
     }
 
     @Test
-    fun testCreateItem(){
+    fun testCreateSubcategory(){
         // POST /matches
         var subcategory = getSubcategoryDto()
 
@@ -40,9 +63,9 @@ class SubcategoryControllerTest : TestBase() {
     @Test
     fun testGetSubcategories(){
         val sub = getSubcategoryDto()
-        val id = postNewSubcategory(sub)
+        postNewSubcategory(sub)
         val sub2 = getSubcategoryDto()
-        val id2 = postNewSubcategory(sub2)
+        postNewSubcategory(sub2)
 
         RestAssured.given()
                 .contentType(ContentType.JSON)

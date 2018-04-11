@@ -13,6 +13,7 @@
         <module>player</module>
         <module>quiz</module>
         <module>subcategory</module>
+        <module>category</module>
     </modules>
 
     <properties>
@@ -112,6 +113,12 @@
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-jsr310</artifactId>
                 <version>${jackson-datatype-jsr310.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.netflix.hystrix</groupId>
+                <artifactId>hystrix-core</artifactId>
+                <version>1.5.12</version>
             </dependency>
 
             <dependency>
