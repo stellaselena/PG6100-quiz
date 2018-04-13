@@ -1,48 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" line="53" />
+    <bookmark url="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" line="62" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b79647b-2859-4e9b-b0a4-e1a46c0e6074" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/category/category.iml" afterPath="$PROJECT_DIR$/category/category.iml" />
-      <change beforePath="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplication.kt" afterPath="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplication.kt" />
-      <change beforePath="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplicationConfig.kt" afterPath="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplicationConfig.kt" />
-      <change beforePath="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/controller/CategoryController.kt" afterPath="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/controller/CategoryController.kt" />
-      <change beforePath="$PROJECT_DIR$/category/src/main/resources/application-docker.yml" afterPath="$PROJECT_DIR$/category/src/main/resources/application-docker.yml" />
-      <change beforePath="$PROJECT_DIR$/category/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/category/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/game.iml" afterPath="$PROJECT_DIR$/game.iml" />
-      <change beforePath="$PROJECT_DIR$/player/player.iml" afterPath="$PROJECT_DIR$/player/player.iml" />
-      <change beforePath="$PROJECT_DIR$/player/pom.xml" afterPath="$PROJECT_DIR$/player/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt" afterPath="$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/quiz/pom.xml" afterPath="$PROJECT_DIR$/quiz/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/quiz/quiz.iml" afterPath="$PROJECT_DIR$/quiz/quiz.iml" />
-      <change beforePath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplication.kt" afterPath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplication.kt" />
       <change beforePath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplicationConfig.kt" afterPath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplicationConfig.kt" />
       <change beforePath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" afterPath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" />
-      <change beforePath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/domain/model/Quiz.kt" afterPath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/domain/model/Quiz.kt" />
-      <change beforePath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/repository/QuizRepository.kt" afterPath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/repository/QuizRepository.kt" />
-      <change beforePath="$PROJECT_DIR$/quiz/src/main/kotlin/resources/application-docker.yml" afterPath="$PROJECT_DIR$/quiz/src/main/resources/application-docker.yml" />
-      <change beforePath="$PROJECT_DIR$/quiz/src/main/kotlin/resources/application.yml" afterPath="$PROJECT_DIR$/quiz/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/QuizControllerTest.kt" afterPath="$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/QuizControllerTest.kt" />
-      <change beforePath="$PROJECT_DIR$/quiz/src/test/resources/application.yml" afterPath="$PROJECT_DIR$/quiz/src/test/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/schema/schema.iml" afterPath="$PROJECT_DIR$/schema/schema.iml" />
-      <change beforePath="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/SubcategoryDto.kt" afterPath="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/SubcategoryDto.kt" />
-      <change beforePath="$PROJECT_DIR$/subcategory/pom.xml" afterPath="$PROJECT_DIR$/subcategory/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/SubcategoryApplication.kt" afterPath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/SubcategoryApplication.kt" />
-      <change beforePath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/SubcategoryApplicationConfig.kt" afterPath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/SubcategoryApplicationConfig.kt" />
-      <change beforePath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt" afterPath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt" />
-      <change beforePath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/domain/model/Subcategory.kt" afterPath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/domain/model/Subcategory.kt" />
-      <change beforePath="$PROJECT_DIR$/subcategory/src/main/kotlin/resources/application-docker.yml" afterPath="$PROJECT_DIR$/subcategory/src/main/resources/application-docker.yml" />
-      <change beforePath="$PROJECT_DIR$/subcategory/src/main/kotlin/resources/application.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/subcategory/src/test/kotlin/com/stella/game/subcategory/controller/SubcategoryControllerTest.kt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/subcategory/src/test/kotlin/resources/application.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/subcategory/subcategory.iml" afterPath="$PROJECT_DIR$/subcategory/subcategory.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,95 +30,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WiremockTestBase.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subcategory/src/test/kotlin/com/stella/game/subcategory/controller/WiremockTestBase.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WiremockTestBase.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/WiremockTestBase.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubcategoryControllerTest.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/subcategory/src/test/kotlin/com/stella/game/subcategory/controller/SubcategoryControllerTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-              <folding>
-                <element signature="e#48#341#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryDto.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/CategoryDto.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuizDto.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/QuizDto.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Serializable.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/io/Serializable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="168" column="17" lean-forward="false" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubcategoryDto.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/SubcategoryDto.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding>
-                <element signature="e#32#106#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubcategoryController.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerDto.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/PlayerDto.kt">
+      <file leaf-file-name="QuizControllerTest.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/QuizControllerTest.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuizRepository.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/repository/QuizRepository.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="44" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuizController.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-278">
+              <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+              <folding>
+                <element signature="e#41#1235#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerApplication.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/PlayerApplication.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerApplicationConfig.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/PlayerApplicationConfig.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerRepository.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/repository/PlayerRepository.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerController.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerControllerWiremockTest.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerWiremockTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerControllerTest.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WiremockTestBase.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/WiremockTestBase.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -178,6 +151,7 @@
       <find>delete</find>
       <find>wire</find>
       <find>rest</find>
+      <find>logger</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,7 +189,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/player/pom.xml" />
         <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/domain/model/Quiz.kt" />
-        <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/repository/QuizRepository.kt" />
         <option value="$PROJECT_DIR$/category/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/category/src/main/resources/application-docker.yml" />
         <option value="$PROJECT_DIR$/quiz/pom.xml" />
@@ -226,12 +199,10 @@
         <option value="$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/WiremockTestBase.kt" />
         <option value="$PROJECT_DIR$/quiz/src/main/kotlin/resources/application-docker.yml" />
         <option value="$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/QuizControllerTest.kt" />
-        <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplicationConfig.kt" />
         <option value="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/controller/CategoryController.kt" />
         <option value="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplication.kt" />
         <option value="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplicationConfig.kt" />
         <option value="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/SubcategoryApplicationConfig.kt" />
-        <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" />
         <option value="$PROJECT_DIR$/subcategory/pom.xml" />
         <option value="$PROJECT_DIR$/subcategory/src/test/kotlin/com/stella/game/subcategory/controller/WiremockTestBase.kt" />
         <option value="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/domain/model/Subcategory.kt" />
@@ -242,6 +213,9 @@
         <option value="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/SubcategoryDto.kt" />
         <option value="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt" />
         <option value="$PROJECT_DIR$/subcategory/src/test/kotlin/com/stella/game/subcategory/controller/SubcategoryControllerTest.kt" />
+        <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplicationConfig.kt" />
+        <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/repository/QuizRepository.kt" />
+        <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" />
       </list>
     </option>
   </component>
@@ -258,7 +232,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="54" />
     <option name="y" value="-8" />
     <option name="width" value="1874" />
@@ -289,6 +263,250 @@
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="converters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -346,7 +564,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SubcategoryControllerTest">
+  <component name="RunManager" selected="JUnit.QuizRepositoryImplTest.testCreateAndGet">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -367,31 +585,6 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="PlayerControllerWiremockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.stella.game.player.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="player" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.stella.game.player" />
-      <option name="MAIN_CLASS_NAME" value="com.stella.game.player.PlayerControllerWiremockTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="QuizRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -406,6 +599,31 @@
       <option name="MAIN_CLASS_NAME" value="com.stella.game.quiz.controller.QuizRepositoryImplTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="QuizRepositoryImplTest.testCreateAndGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.stella.game.quiz.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="quiz" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.stella.game.quiz.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.stella.game.quiz.controller.QuizRepositoryImplTest" />
+      <option name="METHOD_NAME" value="testCreateAndGet" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -582,18 +800,18 @@
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.Application (1)" />
       <item index="3" class="java.lang.String" itemvalue="Spring Boot.Application (2)" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.QuizRepositoryImplTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.PlayerControllerWiremockTest" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.SubcategoryControllerTest.getSubcategoryDto" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.SubcategoryControllerTest.testCreateSubcategory" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.SubcategoryControllerTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.SubcategoryControllerTest.getSubcategoryDto" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.SubcategoryControllerTest.testCreateSubcategory" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.SubcategoryControllerTest" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.QuizRepositoryImplTest.testCreateAndGet" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SubcategoryControllerTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.QuizRepositoryImplTest.testCreateAndGet" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.QuizRepositoryImplTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SubcategoryControllerTest.testCreateSubcategory" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SubcategoryControllerTest.getSubcategoryDto" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PlayerControllerWiremockTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SubcategoryControllerTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SubcategoryControllerTest.testCreateSubcategory" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SubcategoryControllerTest.getSubcategoryDto" />
       </list>
     </recent_temporary>
   </component>
@@ -612,50 +830,50 @@
       <updated>1523108726647</updated>
       <workItem from="1523108728314" duration="3676000" />
       <workItem from="1523112568697" duration="27964000" />
-      <workItem from="1523383072434" duration="15853000" />
+      <workItem from="1523383072434" duration="26339000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PlayerControllerWiremockTest - 2018.04.11 at 21h 58m 41s.xml">
-      <configuration name="PlayerControllerWiremockTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QuizRepositoryImplTest - 2018.04.11 at 21h 59m 49s.xml">
+    <history-entry file="QuizRepositoryImplTest - 2018.04.12 at 20h 46m 14s.xml">
       <configuration name="QuizRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QuizRepositoryImplTest - 2018.04.11 at 22h 22m 00s.xml">
-      <configuration name="QuizRepositoryImplTest" configurationId="JUnit" />
+    <history-entry file="QuizRepositoryImplTest_testCreateAndGet - 2018.04.12 at 20h 17m 10s.xml">
+      <configuration name="QuizRepositoryImplTest.testCreateAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubcategoryControllerTest - 2018.04.11 at 22h 05m 21s.xml">
-      <configuration name="SubcategoryControllerTest" configurationId="JUnit" />
+    <history-entry file="QuizRepositoryImplTest_testCreateAndGet - 2018.04.12 at 20h 40m 32s.xml">
+      <configuration name="QuizRepositoryImplTest.testCreateAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubcategoryControllerTest - 2018.04.11 at 22h 23m 37s.xml">
-      <configuration name="SubcategoryControllerTest" configurationId="JUnit" />
+    <history-entry file="QuizRepositoryImplTest_testCreateAndGet - 2018.04.12 at 20h 52m 00s.xml">
+      <configuration name="QuizRepositoryImplTest.testCreateAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubcategoryControllerTest_getSubcategoryDto - 2018.04.11 at 22h 02m 47s.xml">
-      <configuration name="SubcategoryControllerTest.getSubcategoryDto" configurationId="JUnit" />
+    <history-entry file="QuizRepositoryImplTest_testCreateAndGet - 2018.04.12 at 20h 59m 56s.xml">
+      <configuration name="QuizRepositoryImplTest.testCreateAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubcategoryControllerTest_testCreateSubcategory - 2018.04.11 at 22h 04m 44s.xml">
-      <configuration name="SubcategoryControllerTest.testCreateSubcategory" configurationId="JUnit" />
+    <history-entry file="QuizRepositoryImplTest_testCreateAndGet - 2018.04.12 at 21h 05m 47s.xml">
+      <configuration name="QuizRepositoryImplTest.testCreateAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubcategoryControllerTest_testCreateSubcategory - 2018.04.11 at 22h 06m 40s.xml">
-      <configuration name="SubcategoryControllerTest.testCreateSubcategory" configurationId="JUnit" />
+    <history-entry file="QuizRepositoryImplTest_testCreateAndGet - 2018.04.12 at 21h 44m 20s.xml">
+      <configuration name="QuizRepositoryImplTest.testCreateAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubcategoryControllerTest_testGetSubcategory - 2018.04.11 at 21h 54m 44s.xml">
-      <configuration name="SubcategoryControllerTest.testGetSubcategory" configurationId="JUnit" />
+    <history-entry file="QuizRepositoryImplTest_testCreateAndGet - 2018.04.12 at 21h 53m 44s.xml">
+      <configuration name="QuizRepositoryImplTest.testCreateAndGet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SubcategoryControllerTest_testGetSubcategory - 2018.04.11 at 22h 04m 43s.xml">
-      <configuration name="SubcategoryControllerTest.testGetSubcategory" configurationId="JUnit" />
+    <history-entry file="QuizRepositoryImplTest_testCreateAndGet - 2018.04.12 at 21h 54m 41s.xml">
+      <configuration name="QuizRepositoryImplTest.testCreateAndGet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuizRepositoryImplTest_testCreateAndGet - 2018.04.12 at 21h 58m 49s.xml">
+      <configuration name="QuizRepositoryImplTest.testCreateAndGet" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47493000" />
+    <option name="totallyTimeSpent" value="57979000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5520833" sideWeight="0.08048511" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31875" sideWeight="0.23042999" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -663,18 +881,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27708334" sideWeight="0.82579935" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4125" sideWeight="0.79933846" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26354167" sideWeight="0.4294377" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26354167" sideWeight="0.4090408" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.49779493" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31875" sideWeight="0.79272324" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31875" sideWeight="0.76957" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5520833" sideWeight="0.9195149" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29823595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16354166" sideWeight="0.9195149" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29823595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16875" sideWeight="0.4911797" order="1" side_tool="false" content_ui="tabs" />
@@ -709,274 +927,15 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1989">
-          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/TestBase.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2499">
-          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="97" column="5" lean-forward="false" selection-start-line="97" selection-start-column="5" selection-end-line="100" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="120" column="41" lean-forward="false" selection-start-line="120" selection-start-column="41" selection-end-line="120" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/repository/QuizRepositoryImplTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/repository/SubcategoryRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="43" column="47" lean-forward="false" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/category/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/category/src/main/resources/application-docker.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/category/src/test/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/controller/CategoryController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplicationConfig.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subcategory/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="100" column="42" lean-forward="false" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/category/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/domain/model/Subcategory.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/SubcategoryApplicationConfig.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subcategory/src/test/kotlin/com/stella/game/subcategory/repository/SubcategoryRepositoryTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="e#1464#1658#0" expanded="false" />
-            <element signature="e#1657#1658#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subcategory/src/test/kotlin/com/stella/game/subcategory/controller/TestBase.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="21" column="59" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/RunBefores.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/WiremockTestBase.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-380">
-          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerWiremockTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-890">
-          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/TestBase.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="79" column="28" lean-forward="false" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4227">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/domain/model/Quiz.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/repository/QuizRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-584">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplicationConfig.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="68" column="5" lean-forward="false" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1001,14 +960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/QuizControllerTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -1082,16 +1033,8 @@
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#32#106#0" expanded="true" />
+            <element signature="e#32#106#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1124,7 +1067,291 @@
         <state relative-caret-position="79">
           <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding>
-            <element signature="e#48#341#0" expanded="true" />
+            <element signature="e#48#341#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="117" column="24" lean-forward="false" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="74" column="49" lean-forward="false" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.11.RELEASE/spring-core-4.3.11.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.11.RELEASE/spring-aop-4.3.11.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="672" column="0" lean-forward="false" selection-start-line="672" selection-start-column="0" selection-end-line="672" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="167" column="45" lean-forward="false" selection-start-line="167" selection-start-column="14" selection-end-line="167" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.11.RELEASE/spring-context-4.3.11.RELEASE-sources.jar!/org/springframework/validation/beanvalidation/MethodValidationInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#1464#1658#0" expanded="false" />
+            <element signature="e#1657#1658#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestMethodCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/SpringRepeat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/RunBefores.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestClassCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/RunAfters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunAfterTestClassCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="370" column="0" lean-forward="false" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
+          <folding>
+            <element signature="e#2922#2923#0" expanded="false" />
+            <element signature="e#2966#2967#0" expanded="false" />
+            <element signature="e#10310#10449#0" expanded="false" />
+            <element signature="e#10448#10449#0" expanded="false" />
+            <element signature="e#11040#11204#0" expanded="false" />
+            <element signature="e#11203#11204#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE-sources.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runner/JUnitCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.11.RELEASE/spring-aop-4.3.11.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-sources.jar!/org/apache/commons/lang3/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="434" column="0" lean-forward="false" selection-start-line="434" selection-start-column="0" selection-end-line="434" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.1/rest-assured-3.0.1-sources.jar!/io/restassured/internal/RequestSpecificationImpl.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplicationConfig.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="30" column="62" lean-forward="false" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/PlayerApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/PlayerApplicationConfig.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/repository/PlayerRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerWiremockTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/WiremockTestBase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/QuizControllerTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/repository/QuizRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="44" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-278">
+          <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#1235#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -21,6 +21,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient
 import org.springframework.cloud.netflix.ribbon.RibbonClient
 import org.springframework.web.client.HttpClientErrorException
 import org.springframework.web.client.RestTemplate
+import com.netflix.appinfo.InstanceInfo.InstanceStatus
+import java.util.logging.Logger
+import javax.xml.ws.Response
+
 
 @Api(value = "/quizzes", description = "Handling of creating and retrieving quizzes")
 @RequestMapping(
@@ -32,6 +36,9 @@ import org.springframework.web.client.RestTemplate
 @EnableEurekaClient
 class QuizController {
 
+    private val logger : Logger = Logger.getLogger(QuizController::class.java.canonicalName)
+
+
     @Autowired
     private lateinit var rest: RestTemplate
 
@@ -39,6 +46,8 @@ class QuizController {
     private lateinit var subcategoryHost : String
     @Autowired
     private lateinit var repo: QuizRepository
+
+
 
 
     @ApiOperation("Get all the quizzes")
@@ -77,6 +86,22 @@ class QuizController {
 
     }
 
+    private inner class CallGetSubcategory(private val subcategoryId: Long)
+        : HystrixCommand<Int>(HystrixCommandGroupKey.Factory.asKey("Call get subcategory")) {
+
+        override fun run(): Int {
+
+            val itemURL = "${subcategoryHost}/subcategories/${subcategoryId}"
+            val result = rest.getForEntity(itemURL, SubcategoryDto::class.java)
+
+            return result.statusCodeValue
+        }
+
+        override fun getFallback(): Int {
+            return 0
+        }
+    }
+
 
 
     @ApiOperation("Create a quiz")
@@ -97,23 +122,11 @@ class QuizController {
             return ResponseEntity.status(400).build()
         }
 
-        //todo add this to subcategory
-        //todo write wiremock tests
-        //todo check for correct server configuration
-        //todo add hystrix
+        val result = CallGetSubcategory(dto.subcategoryId!!).execute()
 
-        // check if subcategory id exists
-        val itemURL = "${subcategoryHost}/subcategories/${dto.subcategoryId}"
-        val response: ResponseEntity<SubcategoryDto> = try {
-            rest.getForEntity(itemURL, SubcategoryDto::class.java)
-        } catch (e: HttpClientErrorException) {
-            return ResponseEntity.status(404).build()
-        }
-
-        if (response.statusCodeValue != 200) {
+        if (result != 200 || result == 0) {
             return ResponseEntity.status(400).build()
         }
-
         val id: Long?
         try {
             id = repo.createQuiz(dto.question!!, dto.answers!!, dto.correctAnswer!!, dto.subcategoryId!!)
