@@ -14,10 +14,10 @@ services:
   rabbitmq:
     image: "rabbitmq:3"
 
-  eureka:
-    build:
-      context: ./eureka
-      dockerfile: Dockerfile
+#  eureka:
+#    build:
+#      context: ./eureka
+#      dockerfile: Dockerfile
   #   ports:
   #     - "8761:8761"
 
@@ -29,7 +29,7 @@ services:
       - "8081:8080"
     depends_on:
       - postgres-category
-      - eureka
+#      - eureka
 
   subcategory-module:
     build:
@@ -39,5 +39,5 @@ services:
     - "8082:8080"
     depends_on:
       - postgres-subcategory
-      - eureka
+#      - eureka
       - category-server
