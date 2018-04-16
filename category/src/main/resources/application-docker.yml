@@ -10,7 +10,7 @@ spring:
   application:
     name: category-server
   datasource:
-    url: "jdbc:postgresql://postgres-item:5432/postgres"
+    url: "jdbc:postgresql://postgres-category:5432/postgres"
     username: "postgres"
     password: ""
     driver-class-name: "org.postgresql.Driver"
