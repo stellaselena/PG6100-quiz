@@ -1,3 +1,5 @@
+eureka:
+  instance:
     preferIpAddress: true
   client:
     healthcheck:

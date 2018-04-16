@@ -8,15 +8,6 @@ services:
   postgres-subcategory:
     image: "postgres:10"
 
-  category-module:
-    build:
-      context: ./category
-      dockerfile: Dockerfile
-    ports:
-      - "8081:8080"
-    depends_on:
-      - postgres-category
-
   subcategory-module:
     build:
       context: ./subcategory
@@ -26,3 +17,14 @@ services:
     depends_on:
       - postgres-subcategory
       - category-module
+
+  category-module:
+    build:
+      context: ./category
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8080"
+    depends_on:
+      - postgres-category
+
+  
