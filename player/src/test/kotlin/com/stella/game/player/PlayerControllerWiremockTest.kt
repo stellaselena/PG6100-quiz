@@ -25,7 +25,7 @@ class PlayerControllerWiremockTest : WiremockTestBase() {
                 .statusCode(201)
                 .extract().`as`(Long::class.java)
 
-        wiremockServerItem.stubFor(
+        wiremockServerQuiz.stubFor(
                 WireMock.get(WireMock.urlMatching(".*/quizzes/1"))
                         .willReturn(
                                 WireMock.aResponse()
@@ -57,14 +57,14 @@ class PlayerControllerWiremockTest : WiremockTestBase() {
                 .statusCode(201)
                 .extract().`as`(Long::class.java)
 
-        // Stub 200, item with 1 should exist
-        wiremockServerItem.stubFor(
+        // Stub 200, quiz with 1 should exist
+        wiremockServerQuiz.stubFor(
                 WireMock.get(WireMock.urlMatching(".*/quizzes/1"))
                         .willReturn(
                                 WireMock.aResponse()
                                         .withStatus(200)))
 
-        // Try to add item to non-existant user.
+        // Try to add quiz to non-existant user.
         val responseInvalidUserId = RestAssured.given()
                 .contentType(ContentType.JSON)
                 .body(quiz)
@@ -73,39 +73,39 @@ class PlayerControllerWiremockTest : WiremockTestBase() {
                 .statusCode(404)
 
 
-        // Add item with id that does not exist
-        val itemWithInvalidId = QuizDto(id = "2")
-        wiremockServerItem.stubFor(
+        // Add quiz with id that does not exist
+        val quizWithInvalidId = QuizDto(id = "2")
+        wiremockServerQuiz.stubFor(
                 WireMock.get(WireMock.urlMatching(".*/quizzes/2"))
                         .willReturn(
                                 WireMock.aResponse()
                                         .withStatus(404)))
         RestAssured.given()
                 .contentType(ContentType.JSON)
-                .body(itemWithInvalidId)
+                .body(quizWithInvalidId)
                 .post("/$savedId/quizzes")
                 .then()
                 .statusCode(404)
 
-        // Try to add item without an id
-        val itemWithoutId = QuizDto(id = "")
+        // Try to add quiz without an id
+        val quizWithoutId = QuizDto(id = "")
         RestAssured.given()
                 .contentType(ContentType.JSON)
-                .body(itemWithoutId)
+                .body(quizWithoutId)
                 .post("/$savedId/quizzes")
                 .then()
                 .statusCode(404)
 
-        // Try to add item with text as an id
-        val itemWithTextId = QuizDto(id = "hello")
+        // Try to add quiz with text as an id
+        val quizWithTextId = QuizDto(id = "hello")
         RestAssured.given()
                 .contentType(ContentType.JSON)
-                .body(itemWithTextId)
+                .body(quizWithTextId)
                 .post("/$savedId/quizzes")
                 .then()
                 .statusCode(404)
 
-        // Try to add same item twice
+        // Try to add same quiz twice
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .body(quiz)

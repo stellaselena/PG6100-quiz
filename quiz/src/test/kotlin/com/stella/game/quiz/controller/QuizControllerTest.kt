@@ -21,7 +21,7 @@ class QuizRepositoryImplTest : WiremockTestBase(){
 
         RestAssured.given().get().then().statusCode(200).body("size()", CoreMatchers.equalTo(0))
 
-        wiremockServerItem.stubFor(
+        wiremockServerSubcategory.stubFor(
                 WireMock.get(WireMock.urlMatching(".*/subcategories/1"))
                         .willReturn(
                                 WireMock.aResponse()
@@ -53,7 +53,7 @@ class QuizRepositoryImplTest : WiremockTestBase(){
     @Test
     fun testUpdate() {
 
-        wiremockServerItem.stubFor(
+        wiremockServerSubcategory.stubFor(
                 WireMock.get(WireMock.urlMatching(".*/subcategories/1"))
                         .willReturn(
                                 WireMock.aResponse()
@@ -94,7 +94,7 @@ class QuizRepositoryImplTest : WiremockTestBase(){
     @Test
     fun testDelete() {
 
-        wiremockServerItem.stubFor(
+        wiremockServerSubcategory.stubFor(
                 WireMock.get(WireMock.urlMatching(".*/subcategories/1"))
                         .willReturn(
                                 WireMock.aResponse()
@@ -133,14 +133,14 @@ class QuizRepositoryImplTest : WiremockTestBase(){
 
     private fun createSomeQuizzes() {
         val answers  = mutableListOf("a", "b", "c", "d")
-        wiremockServerItem.stubFor(
+        wiremockServerSubcategory.stubFor(
                 WireMock.get(WireMock.urlMatching(".*/subcategories/1"))
                         .willReturn(
                                 WireMock.aResponse()
                                         .withStatus(200)))
 
         val subcategory = SubcategoryDto(id= 1.toString(), category = 1)
-        wiremockServerItem.stubFor(
+        wiremockServerSubcategory.stubFor(
                 WireMock.get(WireMock.urlMatching(".*/subcategories/2"))
                         .willReturn(
                                 WireMock.aResponse()
@@ -148,7 +148,7 @@ class QuizRepositoryImplTest : WiremockTestBase(){
 
         val subcategory2 = SubcategoryDto(id= 2.toString(), category = 1)
 
-        wiremockServerItem.stubFor(
+        wiremockServerSubcategory.stubFor(
                 WireMock.get(WireMock.urlMatching(".*/subcategories/3"))
                         .willReturn(
                                 WireMock.aResponse()

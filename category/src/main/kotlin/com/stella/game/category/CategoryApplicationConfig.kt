@@ -25,7 +25,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
 @EntityScan(basePackages = arrayOf("com.stella.game.category"))
 @ComponentScan(basePackages = arrayOf("com.stella.game.category"))
 
-class ItemApplicationConfig {
+class CategoryApplicationConfig {
 
     @Bean
     fun swaggerApi(): Docket {
@@ -38,7 +38,7 @@ class ItemApplicationConfig {
 
     private fun apiInfo(): ApiInfo {
         return ApiInfoBuilder()
-                .title("API for entity items")
+                .title("API for entity category")
                 .description("Micro-service for Category entity.")
                 .version("1.0")
                 .build()

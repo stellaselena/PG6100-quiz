@@ -37,7 +37,7 @@ class SubcategoryApplicationConfig {
 
     private fun apiInfo(): ApiInfo {
         return ApiInfoBuilder()
-                .title("API for entity items")
+                .title("API for entity subcategory")
                 .description("Micro-service for Subcategory entity.")
                 .version("1.0")
                 .build()

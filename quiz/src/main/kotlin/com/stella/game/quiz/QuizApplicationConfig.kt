@@ -54,7 +54,7 @@ class QuizApplicationConfig {
 
     private fun apiInfo(): ApiInfo {
         return ApiInfoBuilder()
-                .title("API for entity items")
+                .title("API for entity quiz")
                 .description("Micro-service for Quiz entity.")
                 .version("1.0")
                 .build()

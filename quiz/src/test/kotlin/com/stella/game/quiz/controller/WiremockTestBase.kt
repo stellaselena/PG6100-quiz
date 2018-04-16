@@ -24,7 +24,7 @@ abstract class WiremockTestBase {
     private val logger : Logger = Logger.getLogger(WiremockTestBase::class.java.canonicalName)
 
     companion object {
-        lateinit var wiremockServerItem: WireMockServer
+        lateinit var wiremockServerSubcategory: WireMockServer
 
         @BeforeClass
         @JvmStatic
@@ -35,16 +35,16 @@ abstract class WiremockTestBase {
             RestAssured.basePath = "/quizzes"
             RestAssured.enableLoggingOfRequestAndResponseIfValidationFails()
 
-            wiremockServerItem = WireMockServer(WireMockConfiguration.wireMockConfig().port(8082).notifier(ConsoleNotifier(true)))
+            wiremockServerSubcategory = WireMockServer(WireMockConfiguration.wireMockConfig().port(8082).notifier(ConsoleNotifier(true)))
 
-            wiremockServerItem.start()
+            wiremockServerSubcategory.start()
 
         }
 
         @AfterClass
         @JvmStatic
         fun tearDown() {
-            wiremockServerItem.stop()
+            wiremockServerSubcategory.stop()
         }
     }
 

@@ -107,10 +107,10 @@ class PlayerController {
             return ResponseEntity.status(404).build()
         }
 
-        // check if item id exists
-        val itemURL = "${quizHost}/quizzes/${quizDto.id}"
+        // check if quiz id exists
+        val quizURL = "${quizHost}/quizzes/${quizDto.id}"
         val response: ResponseEntity<QuizDto> = try {
-            rest.getForEntity(itemURL, QuizDto::class.java)
+            rest.getForEntity(quizURL, QuizDto::class.java)
         } catch (e: HttpClientErrorException) {
             return ResponseEntity.status(404).build()
         }

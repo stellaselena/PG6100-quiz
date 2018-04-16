@@ -40,8 +40,8 @@ class MatchResultControllerTest : TestBase() {
     @Test
     fun testGetCategory(){
         // Arrange
-        val item = getCategoryDto()
-        val id = postNewCategory(item)
+        val category = getCategoryDto()
+        val id = postNewCategory(category)
 
         val response = RestAssured.given()
                 .contentType(ContentType.JSON)
@@ -52,7 +52,7 @@ class MatchResultControllerTest : TestBase() {
                 .statusCode(200)
                 .extract()
                 .`as`(CategoryDto::class.java)
-        Assert.assertTrue(item.name == response.name)
+        Assert.assertTrue(category.name == response.name)
 
         RestAssured.given()
                 .contentType(ContentType.JSON)
@@ -73,8 +73,8 @@ class MatchResultControllerTest : TestBase() {
 
     @Test
     fun testDelete(){
-        val itemDto = getCategoryDto()
-        val id = postNewCategory(itemDto)
+        val categoryDto = getCategoryDto()
+        val id = postNewCategory(categoryDto)
 
         val response = RestAssured.given()
                 .contentType(ContentType.JSON)
@@ -85,7 +85,7 @@ class MatchResultControllerTest : TestBase() {
                 .statusCode(200)
                 .extract()
                 .`as`(CategoryDto::class.java)
-        Assert.assertTrue(itemDto.name == response.name)
+        Assert.assertTrue(categoryDto.name == response.name)
 
         RestAssured.given()
                 .contentType(ContentType.JSON)

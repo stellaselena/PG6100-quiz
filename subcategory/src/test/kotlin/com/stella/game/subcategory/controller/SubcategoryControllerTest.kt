@@ -12,7 +12,7 @@ import org.junit.Test
 class SubcategoryControllerTest : WiremockTestBase() {
 
     fun getSubcategoryDto(): SubcategoryDto {
-        wiremockServerItem.stubFor(
+        wiremockServerCategory.stubFor(
                 WireMock.get(WireMock.urlMatching(".*/categories/1"))
                         .willReturn(
                                 WireMock.aResponse()
@@ -110,8 +110,8 @@ class SubcategoryControllerTest : WiremockTestBase() {
 
     @Test
     fun testDelete(){
-        val itemDto = getSubcategoryDto()
-        val id = postNewSubcategory(itemDto)
+        val subcategoryDto = getSubcategoryDto()
+        val id = postNewSubcategory(subcategoryDto)
 
         val response = RestAssured.given()
                 .contentType(ContentType.JSON)
@@ -122,7 +122,7 @@ class SubcategoryControllerTest : WiremockTestBase() {
                 .statusCode(200)
                 .extract()
                 .`as`(SubcategoryDto::class.java)
-        Assert.assertTrue(itemDto.name == response.name)
+        Assert.assertTrue(subcategoryDto.name == response.name)
 
         RestAssured.given()
                 .contentType(ContentType.JSON)
@@ -153,10 +153,10 @@ class SubcategoryControllerTest : WiremockTestBase() {
     @Test
     fun testReplaceName(){
         // Arrange
-        val itemDto = getSubcategoryDto()
-        val id = postNewSubcategory(itemDto)
+        val subcategoryDto = getSubcategoryDto()
+        val id = postNewSubcategory(subcategoryDto)
 
-        // GET /items/:id
+        // GET /subcategories/:id
         val response = RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
@@ -166,16 +166,16 @@ class SubcategoryControllerTest : WiremockTestBase() {
                 .statusCode(200)
                 .extract()
                 .`as`(SubcategoryDto::class.java)
-        Assert.assertTrue(itemDto.name == response.name)
+        Assert.assertTrue(subcategoryDto.name == response.name)
 
-        itemDto.name = "football"
-        itemDto.id = id.toString()
+        subcategoryDto.name = "football"
+        subcategoryDto.id = id.toString()
 
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
                 .pathParam("id", id)
-                .body(itemDto)
+                .body(subcategoryDto)
                 .put("/{id}")
                 .then()
                 .statusCode(204)
@@ -189,7 +189,7 @@ class SubcategoryControllerTest : WiremockTestBase() {
                 .statusCode(200)
                 .extract()
                 .`as`(SubcategoryDto::class.java)
-        Assert.assertTrue(itemDto.name == response2.name)
+        Assert.assertTrue(subcategoryDto.name == response2.name)
         Assert.assertTrue(response2.id == response.id)
     }
 

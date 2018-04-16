@@ -25,7 +25,7 @@ abstract class WiremockTestBase {
 
 
     companion object {
-        lateinit var wiremockServerItem: WireMockServer
+        lateinit var wiremockServerCategory: WireMockServer
 
         @BeforeClass
         @JvmStatic
@@ -36,16 +36,16 @@ abstract class WiremockTestBase {
             RestAssured.basePath = "/subcategories"
             RestAssured.enableLoggingOfRequestAndResponseIfValidationFails()
 
-            wiremockServerItem = WireMockServer(WireMockConfiguration.wireMockConfig().port(8084).notifier(ConsoleNotifier(true)))
+            wiremockServerCategory = WireMockServer(WireMockConfiguration.wireMockConfig().port(8084).notifier(ConsoleNotifier(true)))
 
-            wiremockServerItem.start()
+            wiremockServerCategory.start()
 
         }
 
         @AfterClass
         @JvmStatic
         fun tearDown() {
-            wiremockServerItem.stop()
+            wiremockServerCategory.stop()
         }
     }
 

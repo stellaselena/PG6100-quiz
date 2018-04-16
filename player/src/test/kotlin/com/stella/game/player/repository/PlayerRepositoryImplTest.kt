@@ -55,7 +55,7 @@ class EntityRepositoryImplTest {
     }
 
     @Test
-    fun testAddItem_Valid() {
+    fun testAddQuiz_Valid() {
         val player = getValidPlayers()[0]
         val savedId = createPlayer(player)
         val expectedQuizCount = player.quizzes.count() + 1
@@ -70,7 +70,7 @@ class EntityRepositoryImplTest {
     }
 
     @Test
-    fun testAddItem_Invalid() {
+    fun testAddQuiz_Invalid() {
         val player = getValidPlayers()[0]
         player.quizzes = mutableSetOf(1L, 2L)
 

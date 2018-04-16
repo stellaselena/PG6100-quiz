@@ -91,8 +91,8 @@ class QuizController {
 
         override fun run(): Int {
 
-            val itemURL = "${subcategoryHost}/subcategories/${subcategoryId}"
-            val result = rest.getForEntity(itemURL, SubcategoryDto::class.java)
+            val subcategoryURL = "${subcategoryHost}/subcategories/${subcategoryId}"
+            val result = rest.getForEntity(subcategoryURL, SubcategoryDto::class.java)
 
             return result.statusCodeValue
         }

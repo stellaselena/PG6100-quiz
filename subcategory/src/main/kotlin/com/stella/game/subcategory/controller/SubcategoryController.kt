@@ -62,10 +62,10 @@ class SubcategoryApi {
             return ResponseEntity.status(400).build()
         }
 
-        // check if subcategory id exists
-        val itemURL = "${categoryHost}/categories/${dto.category}"
+        // check if category id exists
+        val categoryURL = "${categoryHost}/categories/${dto.category}"
         val response: ResponseEntity<CategoryDto> = try {
-            rest.getForEntity(itemURL, CategoryDto::class.java)
+            rest.getForEntity(categoryURL, CategoryDto::class.java)
         } catch (e: HttpClientErrorException) {
             return ResponseEntity.status(404).build()
         }
