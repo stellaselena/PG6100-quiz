@@ -15,7 +15,7 @@ services:
       ports:
         - "8761:8761"
 
-  subcategory-module:
+  subcategory-server:
     build:
       context: ./subcategory
       dockerfile: Dockerfile
@@ -24,9 +24,9 @@ services:
     depends_on:
       - eureka
       - postgres-subcategory
-      - category-module
+      - category-server
 
-  category-module:
+  category-server:
     build:
       context: ./category
       dockerfile: Dockerfile
