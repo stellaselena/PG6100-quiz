@@ -7,7 +7,6 @@ import com.stella.game.subcategory.repository.SubcategoryRepository
 import io.swagger.annotations.*
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient
 import org.springframework.cloud.netflix.ribbon.RibbonClient
 import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType

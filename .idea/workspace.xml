@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b79647b-2859-4e9b-b0a4-e1a46c0e6074" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplication.kt" afterPath="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplication.kt" />
+      <change beforePath="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplicationConfig.kt" afterPath="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplicationConfig.kt" />
       <change beforePath="$PROJECT_DIR$/category/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/category/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
+      <change beforePath="$PROJECT_DIR$/eureka/pom.xml" afterPath="$PROJECT_DIR$/eureka/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/eureka/src/main/resources/application-docker.yml" afterPath="$PROJECT_DIR$/eureka/src/main/resources/application-docker.yml" />
+      <change beforePath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt" afterPath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt" />
       <change beforePath="$PROJECT_DIR$/subcategory/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/subcategory/src/main/resources/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,30 +36,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/category/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+            <state relative-caret-position="170">
+              <caret line="10" column="76" lean-forward="false" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subcategory/src/main/resources/application.yml">
+      <file leaf-file-name="CategoryApplication.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplication.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application-docker.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subcategory/src/main/resources/application-docker.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -72,61 +65,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/category/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerApplicationConfig.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/PlayerApplicationConfig.kt">
+      <file leaf-file-name="application-docker.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-docker.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuizApplication.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplication.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerApplication.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/PlayerApplication.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/subcategory/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-docker.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subcategory/src/main/resources/application-docker.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubcategoryController.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EurekaApplication.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka/src/main/kotlin/com/stella/game/eureka/EurekaApplication.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#32#216#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/category/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="79" column="50" lean-forward="false" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -156,9 +161,10 @@
       <find>postgres-it</find>
       <find>testdel</find>
       <find>item</find>
-      <find>eurek</find>
-      <find>eureka</find>
       <find>ribbon</find>
+      <find>config</find>
+      <find>eureka</find>
+      <find>eurek</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\sathi\Downloads\game\category</dir>
@@ -175,8 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryConverter.kt" />
-        <option value="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/CategoryDto.kt" />
         <option value="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/repository/CategoryRepository.kt" />
         <option value="$PROJECT_DIR$/category/src/main/resources/application-docker.yml.kt" />
         <option value="$PROJECT_DIR$/category/src/test/resources/application.yml" />
@@ -193,7 +197,6 @@
         <option value="$PROJECT_DIR$/quiz/src/test/resources/application.yml" />
         <option value="$PROJECT_DIR$/quiz/src/main/kotlin/resources/application-docker.yml" />
         <option value="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/controller/CategoryController.kt" />
-        <option value="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplication.kt" />
         <option value="$PROJECT_DIR$/subcategory/pom.xml" />
         <option value="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/domain/model/Subcategory.kt" />
         <option value="$PROJECT_DIR$/subcategory/src/main/kotlin/resources/application-docker.yml" />
@@ -206,7 +209,6 @@
         <option value="$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/WiremockTestBase.kt" />
         <option value="$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerWiremockTest.kt" />
         <option value="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/SubcategoryApplicationConfig.kt" />
-        <option value="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt" />
         <option value="$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt" />
         <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplicationConfig.kt" />
         <option value="$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/repository/PlayerRepositoryImplTest.kt" />
@@ -217,15 +219,19 @@
         <option value="$PROJECT_DIR$/category/src/test/kotlin/com/stella/game/category/controller/CategoryControllerTest.kt" />
         <option value="$PROJECT_DIR$/subcategory/src/test/kotlin/com/stella/game/subcategory/controller/SubcategoryControllerTest.kt" />
         <option value="$PROJECT_DIR$/subcategory/Dockerfile" />
-        <option value="$PROJECT_DIR$/eureka/pom.xml" />
         <option value="$PROJECT_DIR$/eureka/src/main/kotlin/com/stella/game/eureka/EurekaApplication.kt" />
         <option value="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/SubcategoryApplication.kt" />
         <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" />
-        <option value="$PROJECT_DIR$/category/src/main/resources/application-docker.yml" />
-        <option value="$PROJECT_DIR$/subcategory/src/main/resources/application-docker.yml" />
-        <option value="$PROJECT_DIR$/category/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/subcategory/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplication.kt" />
+        <option value="$PROJECT_DIR$/category/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/category/src/main/resources/application-docker.yml" />
+        <option value="$PROJECT_DIR$/subcategory/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/subcategory/src/main/resources/application-docker.yml" />
+        <option value="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt" />
+        <option value="$PROJECT_DIR$/eureka/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/eureka/src/main/resources/application-docker.yml" />
       </list>
     </option>
   </component>
@@ -278,51 +284,25 @@
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="category" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="category" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="category" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="category" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
@@ -330,16 +310,16 @@
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="subcategory" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -692,13 +672,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71812000" />
+    <option name="totallyTimeSpent" value="73908000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8822917" sideWeight="0.10694598" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38125" sideWeight="0.10694598" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -716,7 +697,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.49779493" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5239583" sideWeight="0.76350605" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8822917" sideWeight="0.893054" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38125" sideWeight="0.893054" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30154356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -783,13 +764,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="370" column="0" lean-forward="false" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE-sources.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -905,14 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1002,34 +968,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subcategory/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/category/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subcategory/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1039,16 +981,6 @@
         <state relative-caret-position="68">
           <caret line="4" column="57" lean-forward="false" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/kotlin/com/stella/game/eureka/EurekaApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#32#216#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1068,34 +1000,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/category/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="82" column="38" lean-forward="false" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="16" column="49" lean-forward="false" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-docker.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1132,18 +1040,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/category/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        <state relative-caret-position="393">
+          <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subcategory/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/category/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subcategory/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="84" column="51" lean-forward="false" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/category/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="79" column="50" lean-forward="false" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/kotlin/com/stella/game/eureka/EurekaApplication.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#32#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/category/src/main/kotlin/com/stella/game/category/CategoryApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/category/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1156,18 +1114,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subcategory/src/main/resources/application-docker.yml">
+    <entry file="file://$PROJECT_DIR$/subcategory/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/subcategory/src/main/resources/application-docker.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        <state relative-caret-position="272">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="76" lean-forward="false" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-docker.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
           <folding />
         </state>
       </provider>

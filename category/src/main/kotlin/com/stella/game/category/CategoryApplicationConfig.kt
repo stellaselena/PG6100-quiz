@@ -24,7 +24,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
 @EnableJpaRepositories(basePackages = arrayOf("com.stella.game.category"))
 @EntityScan(basePackages = arrayOf("com.stella.game.category"))
 @ComponentScan(basePackages = arrayOf("com.stella.game.category"))
-
 class CategoryApplicationConfig {
 
     @Bean
