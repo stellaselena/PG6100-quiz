@@ -14,6 +14,7 @@
         <module>quiz</module>
         <module>subcategory</module>
         <module>category</module>
+        <module>eureka</module>
     </modules>
 
     <properties>

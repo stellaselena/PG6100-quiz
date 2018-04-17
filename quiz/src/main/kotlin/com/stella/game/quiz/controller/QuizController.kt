@@ -12,18 +12,12 @@ import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
 import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.*
-import org.springframework.web.util.UriComponentsBuilder
 import javax.validation.ConstraintViolationException
 import com.netflix.hystrix.HystrixCommand
 import com.netflix.hystrix.HystrixCommandGroupKey
 import com.stella.game.schema.SubcategoryDto
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient
-import org.springframework.cloud.netflix.ribbon.RibbonClient
-import org.springframework.web.client.HttpClientErrorException
 import org.springframework.web.client.RestTemplate
-import com.netflix.appinfo.InstanceInfo.InstanceStatus
 import java.util.logging.Logger
-import javax.xml.ws.Response
 
 
 @Api(value = "/quizzes", description = "Handling of creating and retrieving quizzes")
@@ -33,7 +27,6 @@ import javax.xml.ws.Response
 )
 @RestController
 @Validated
-@EnableEurekaClient
 class QuizController {
 
     private val logger : Logger = Logger.getLogger(QuizController::class.java.canonicalName)

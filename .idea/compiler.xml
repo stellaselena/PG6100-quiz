@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="category" />
+        <module name="eureka" />
         <module name="player" />
         <module name="quiz" />
         <module name="schema" />
@@ -15,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="category" target="1.8" />
+      <module name="eureka" target="1.8" />
       <module name="game" target="1.8" />
       <module name="player" target="1.8" />
       <module name="quiz" target="1.8" />
