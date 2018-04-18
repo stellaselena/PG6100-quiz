@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @SpringBootApplication(scanBasePackages = arrayOf("com.stella.game.quiz"))
 @EnableEurekaClient
-@RibbonClient(name = "subcategory-server")
+//@RibbonClient(name = "subcategory-server")
 class Application : WebMvcConfigurerAdapter() {
 
 }

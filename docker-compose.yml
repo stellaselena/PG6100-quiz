@@ -50,7 +50,7 @@ services:
         - "8083:8080"
       depends_on:
         - eureka
-        - postgres-subcategory
+        - postgres-quiz
         - subcategory-server
   player-server:
       build:
