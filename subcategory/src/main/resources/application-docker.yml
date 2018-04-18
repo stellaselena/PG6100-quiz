@@ -9,8 +9,6 @@ eureka:
 spring:
   application:
     name: subcategory-server
-    rabbitmq:
-        host: rabbitmq
   datasource:
     url: "jdbc:postgresql://postgres-subcategory:5432/postgres"
     username: "postgres"

@@ -9,8 +9,6 @@ eureka:
 spring:
   application:
     name: quiz-server
-     rabbitmq:
-        host: rabbitmq
   datasource:
     url: "jdbc:postgresql://postgres-quiz:5432/postgres"
     username: "postgres"
