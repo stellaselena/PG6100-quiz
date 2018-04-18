@@ -8,6 +8,12 @@ services:
   postgres-subcategory:
     image: "postgres:10"
 
+  postgres-quiz:
+    image: "postgres:10"
+
+  postgres-player:
+    image: "postgres:10"
+
   eureka:
       build:
         context: ./eureka
@@ -31,9 +37,30 @@ services:
       context: ./category
       dockerfile: Dockerfile
     ports:
-      - "8081:8080"
+      - "8084:8080"
     depends_on:
       - eureka
       - postgres-category
+
+  quiz-server:
+      build:
+        context: ./quiz
+        dockerfile: Dockerfile
+      ports:
+        - "8083:8080"
+      depends_on:
+        - eureka
+        - postgres-subcategory
+        - subcategory-server
+  player-server:
+      build:
+        context: ./player
+        dockerfile: Dockerfile
+      ports:
+        - "8081:8080"
+      depends_on:
+        - eureka
+        - postgres-quiz
+        - quiz-server
 
   
