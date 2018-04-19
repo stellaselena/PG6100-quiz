@@ -6,6 +6,7 @@ import com.stella.game.schema.SubcategoryDto
 import io.restassured.RestAssured
 import io.restassured.http.ContentType
 import org.hamcrest.CoreMatchers
+import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 
@@ -49,6 +50,25 @@ class QuizRepositoryImplTest : WiremockTestBase(){
                 .body("correctAnswer", CoreMatchers.equalTo(1))
 
     }
+
+    @Test
+    fun testCreateQuizWithNonexistentCategory(){
+        RestAssured.given().get().then().statusCode(200).body("size()", CoreMatchers.equalTo(0))
+
+        val subcategory = SubcategoryDto(id= 99.toString(), category = 1)
+
+        val dto = QuizDto(null, "question", mutableListOf("a", "b", "c", "d"), 1, subcategory.id?.toLong())
+
+        val id = RestAssured.given().contentType(ContentType.JSON)
+                .body(dto)
+                .post()
+                .then()
+                .statusCode(400)
+                .extract().asString()
+
+
+    }
+
 
     @Test
     fun testUpdate() {

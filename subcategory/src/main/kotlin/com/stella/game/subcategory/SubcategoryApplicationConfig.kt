@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
+import com.netflix.config.ConfigurationManager
 import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.boot.web.client.RestTemplateBuilder
 import org.springframework.cloud.client.loadbalancer.LoadBalanced
@@ -25,6 +26,19 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
 @EnableJpaRepositories(basePackages = arrayOf("com.stella.game.subcategory"))
 @EntityScan(basePackages = arrayOf("com.stella.game.subcategory"))
 class SubcategoryApplicationConfig {
+
+
+    init {
+        //Hystrix configuration
+        val conf = ConfigurationManager.getConfigInstance()
+        // how long to wait before giving up a request?
+        conf.setProperty("hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds", 1000) //default is 1000
+        // how many failures before activating the CB?
+        conf.setProperty("hystrix.command.default.circuitBreaker.requestVolumeThreshold", 20) //default 20
+        conf.setProperty("hystrix.command.default.circuitBreaker.errorThresholdPercentage", 50)
+        //for how long should the CB stop requests? after this, 1 single request will try to check if remote server is ok
+        conf.setProperty("hystrix.command.default.circuitBreaker.sleepWindowInMilliseconds", 5000)
+    }
 
     @Bean
     fun swaggerApi(): Docket {

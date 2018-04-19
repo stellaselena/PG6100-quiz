@@ -69,7 +69,7 @@ class EntityRepositoryImplTest {
     }
 
     @Test
-    fun findRandomQuizWithSubcategory(){
+    fun testFindRandomQuizWithSubcategory(){
         createSomeQuizzes()
 
         val quizzes = repo.findAll()
@@ -82,5 +82,6 @@ class EntityRepositoryImplTest {
 
 
     }
+
 
 }

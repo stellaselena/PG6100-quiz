@@ -14,6 +14,11 @@ services:
   postgres-player:
     image: "postgres:10"
 
+  redis:
+    image: "redis:latest"
+  rabbitmq:
+    image: "rabbitmq:3"
+
   eureka:
       build:
         context: ./eureka
@@ -62,5 +67,7 @@ services:
         - eureka
         - postgres-quiz
         - quiz-server
+        - rabbitmq
+        - redis
 
   

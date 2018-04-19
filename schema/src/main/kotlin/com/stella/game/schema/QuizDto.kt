@@ -19,3 +19,4 @@ data class QuizDto(
         @ApiModelProperty("Quiz subcategory")
         var subcategoryId: Long? = null
 ) : Serializable
+

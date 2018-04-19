@@ -191,6 +191,11 @@ class QuizController {
             return ResponseEntity.status(400).build()
         }
 
+        val result = CallGetSubcategory(dto.subcategoryId!!).execute()
+
+        if (result != 200 || result == 0) {
+            return ResponseEntity.status(400).build()
+        }
 
         try {
             repo.update(id, dto.question!!, dto.answers!!, dto.correctAnswer!!, dto.subcategoryId!!)

@@ -1,5 +1,7 @@
 package com.stella.game.subcategory.controller
 
+import com.netflix.hystrix.HystrixCommand
+import com.netflix.hystrix.HystrixCommandGroupKey
 import com.stella.game.schema.CategoryDto
 import com.stella.game.schema.SubcategoryDto
 import com.stella.game.subcategory.domain.converter.SubcategoryConverter
@@ -61,15 +63,9 @@ class SubcategoryApi {
             return ResponseEntity.status(400).build()
         }
 
-        // check if category id exists
-        val categoryURL = "${categoryHost}/categories/${dto.category}"
-        val response: ResponseEntity<CategoryDto> = try {
-            rest.getForEntity(categoryURL, CategoryDto::class.java)
-        } catch (e: HttpClientErrorException) {
-            return ResponseEntity.status(404).build()
-        }
+        val result = CallGetCategory(dto.category!!).execute()
 
-        if (response.statusCodeValue != 200) {
+        if (result != 200 || result == 0) {
             return ResponseEntity.status(400).build()
         }
 
@@ -85,6 +81,22 @@ class SubcategoryApi {
         }
 
         return ResponseEntity.status(201).body(id)
+    }
+
+    private inner class CallGetCategory(private val categoryId: Long)
+        : HystrixCommand<Int>(HystrixCommandGroupKey.Factory.asKey("Call get category")) {
+
+        override fun run(): Int {
+
+            val categoryURL = "${categoryHost}/categories/${categoryId}"
+            val result = rest.getForEntity(categoryURL, CategoryDto::class.java)
+
+            return result.statusCodeValue
+        }
+
+        override fun getFallback(): Int {
+            return 0
+        }
     }
 
 
