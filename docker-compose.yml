@@ -2,6 +2,8 @@ version: '3.3'
 
 services:
 
+  postgres-user:
+    image: "postgres:10"
   postgres-category:
     image: "postgres:10"
 
@@ -13,6 +15,10 @@ services:
 
   postgres-player:
     image: "postgres:10"
+
+  postgres-round:
+    image: "postgres:10"
+
 
   redis:
     image: "redis:latest"
@@ -30,8 +36,8 @@ services:
     build:
       context: ./subcategory
       dockerfile: Dockerfile
-    ports:
-      - "8082:8080"
+#    ports:
+#      - "8082:8080"
     depends_on:
       - eureka
       - postgres-subcategory
@@ -41,8 +47,8 @@ services:
     build:
       context: ./category
       dockerfile: Dockerfile
-    ports:
-      - "8084:8080"
+#    ports:
+#      - "8084:8080"
     depends_on:
       - eureka
       - postgres-category
@@ -51,8 +57,8 @@ services:
       build:
         context: ./quiz
         dockerfile: Dockerfile
-      ports:
-        - "8083:8080"
+#      ports:
+#        - "8083:8080"
       depends_on:
         - eureka
         - postgres-quiz
@@ -61,8 +67,8 @@ services:
       build:
         context: ./player
         dockerfile: Dockerfile
-      ports:
-        - "8081:8080"
+#      ports:
+#        - "8081:8080"
       depends_on:
         - eureka
         - postgres-quiz
@@ -70,4 +76,27 @@ services:
         - rabbitmq
         - redis
 
-  
+  round-server:
+      build:
+          context: ./round
+          dockerfile: Dockerfile
+    #    ports:
+    #      - "8085:8080"
+          depends_on:
+            - eureka
+            - postgres-match
+            - rabbitmq
+  gateway:
+      build:
+        context: ./gateway
+        dockerfile: Dockerfile
+      ports:
+        - "10000:8080"
+      depends_on:
+        - redis
+        - eureka
+        - postgres-user
+        - gamelogic-server
+        - player-server
+        - quiz-server
+        - round-server

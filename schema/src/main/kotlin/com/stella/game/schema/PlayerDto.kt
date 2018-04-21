@@ -14,5 +14,10 @@ data class PlayerDto(
         var id: String? = null,
 
         @ApiModelProperty("The quizzes the player has created")
-        var quizzes: Collection<Long>? = null
+        var quizzes: Collection<Long>? = null,
+
+        @ApiModelProperty("Correct answers")
+        var correctAnswers : Int? = null
+
+
 ): Serializable

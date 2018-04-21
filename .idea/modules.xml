@@ -5,8 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/category/category.iml" filepath="$PROJECT_DIR$/category/category.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/game.iml" filepath="$PROJECT_DIR$/game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/player/player.iml" filepath="$PROJECT_DIR$/player/player.iml" />
       <module fileurl="file://$PROJECT_DIR$/quiz/quiz.iml" filepath="$PROJECT_DIR$/quiz/quiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/round/round.iml" filepath="$PROJECT_DIR$/round/round.iml" />
       <module fileurl="file://$PROJECT_DIR$/schema/schema.iml" filepath="$PROJECT_DIR$/schema/schema.iml" />
       <module fileurl="file://$PROJECT_DIR$/subcategory/subcategory.iml" filepath="$PROJECT_DIR$/subcategory/subcategory.iml" />
     </modules>

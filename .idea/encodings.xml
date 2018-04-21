@@ -4,8 +4,10 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/category" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/player" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quiz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/round" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/schema" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/subcategory" charset="UTF-8" />
   </component>

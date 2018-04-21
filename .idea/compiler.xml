@@ -8,8 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="category" />
         <module name="eureka" />
+        <module name="gateway" />
         <module name="player" />
         <module name="quiz" />
+        <module name="round" />
         <module name="schema" />
         <module name="subcategory" />
       </profile>
@@ -18,8 +20,10 @@
       <module name="category" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="game" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="player" target="1.8" />
       <module name="quiz" target="1.8" />
+      <module name="round" target="1.8" />
       <module name="schema" target="1.8" />
       <module name="subcategory" target="1.8" />
     </bytecodeTargetLevel>
