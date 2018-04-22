@@ -78,14 +78,14 @@ services:
 
   round-server:
       build:
-          context: ./round
-          dockerfile: Dockerfile
-    #    ports:
-    #      - "8085:8080"
-          depends_on:
-            - eureka
-            - postgres-match
-            - rabbitmq
+        context: ./round
+        dockerfile: Dockerfile
+    #   ports:
+    #     - "8085:8080"
+      depends_on:
+        - eureka
+        - postgres-round
+        - rabbitmq
   gateway:
       build:
         context: ./gateway
@@ -96,7 +96,7 @@ services:
         - redis
         - eureka
         - postgres-user
-        - gamelogic-server
+#        - gamelogic-server
         - player-server
         - quiz-server
         - round-server
