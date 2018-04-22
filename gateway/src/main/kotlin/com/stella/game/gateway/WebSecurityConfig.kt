@@ -45,7 +45,7 @@ class WebSecurityConfig(
                 .anyRequest().denyAll()
                 .and()
                 .csrf().disable()
-                .csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+//                .csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
     }
 
 
