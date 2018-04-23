@@ -19,7 +19,6 @@ services:
   postgres-round:
     image: "postgres:10"
 
-
   redis:
     image: "redis:latest"
   rabbitmq:

@@ -34,7 +34,7 @@ class RoundApplicationConfig {
 
     private fun apiInfo(): ApiInfo {
         return ApiInfoBuilder()
-                .title("API for entity match")
+                .title("API for entity round")
                 .description("Micro-service for Round entity.")
                 .version("1.0")
                 .build()

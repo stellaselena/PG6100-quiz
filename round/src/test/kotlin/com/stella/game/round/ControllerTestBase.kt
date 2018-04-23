@@ -25,10 +25,7 @@ abstract class ControllerTestBase{
     @LocalServerPort
     protected var port = 0
 
-    /**
-     * if we do not provide application.yml for tests,
-     * Spring automatically load it from source root
-     * */
+
 //    @Value("\${server.contextPath}")
 //    private lateinit var contextPath : String
 
@@ -50,8 +47,6 @@ abstract class ControllerTestBase{
                 .`as`(Array<RoundDto>::class.java)
                 .toList()
 
-
-
         list.stream().forEach {
             RestAssured.given().pathParam("id", it.id)
                     .delete("/{id}")
@@ -65,14 +60,14 @@ abstract class ControllerTestBase{
                 .body("size()", CoreMatchers.equalTo(0))
     }
 
-    fun getValidMatchResultDto():RoundDto {
+    fun getValidRoundDto():RoundDto {
         val player1Winner = PlayerResultDto("1","player1", 4)
         val player2  = PlayerResultDto("2","player2", 2)
         val quiz = QuizResultDto("1", "question", mutableListOf("a", "b", "c", "d"), 1)
-        return RoundDto(player1Winner, player2, player1Winner.username, null, quiz)
+        return RoundDto(player1Winner, player2, quiz, player1Winner.username)
     }
 
-    fun postNewMatchResultValid(dto: RoundDto) : Long{
+    fun postNewRoundValid(dto: RoundDto) : Long{
         return RestAssured.given().contentType(ContentType.JSON)
                 .body(dto)
                 .post()

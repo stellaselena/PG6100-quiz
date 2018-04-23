@@ -215,12 +215,14 @@ class RoundController{
                 resultDto.player2?.username!=null &&
                 resultDto.player1?.correctAnswers!=null &&
                 resultDto.player2?.correctAnswers!=null &&
-                resultDto.winnerName!=null &&
-                resultDto.id !=null &&
                 resultDto.quiz?.id != null &&
                 resultDto.quiz?.question != null &&
                 resultDto.quiz?.answers != null &&
-                resultDto.quiz?.correctAnswer != null)
+                resultDto.quiz?.correctAnswer != null &&
+                resultDto.winnerName!=null &&
+                resultDto.id==null
+
+        )
                 { return true }
 
         return false

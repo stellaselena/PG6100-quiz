@@ -14,17 +14,17 @@ data class RoundDto(
         @ApiModelProperty("Player2 info")
         var player2: PlayerResultDto? = null,
 
-        @ApiModelProperty("Winner name of the round")
-        var winnerName: String?= null,
-
-        @ApiModelProperty("When the round was created")
-        var creationTime: ZonedDateTime? = null,
-
         @ApiModelProperty("Chosen quiz")
         var quiz: QuizResultDto? = null,
 
+        @ApiModelProperty("Winner name of the round")
+        var winnerName: String?= null,
+
         @ApiModelProperty("Round id")
-        var id: String?=null
+        var id: String?=null,
+
+        @ApiModelProperty("When the round was created")
+        var creationTime: ZonedDateTime? = null
 ): Serializable
 
 
