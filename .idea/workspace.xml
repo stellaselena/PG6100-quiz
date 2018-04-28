@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" line="55" />
+    <bookmark url="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" line="53" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b79647b-2859-4e9b-b0a4-e1a46c0e6074" name="Default" comment="fix wrong import &amp; config for local start">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
-      <change beforePath="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/RoundApplicationConfig.kt" afterPath="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/RoundApplicationConfig.kt" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" afterPath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" />
+      <change beforePath="$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/QuizControllerTest.kt" afterPath="$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/QuizControllerTest.kt" />
+      <change beforePath="$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/repository/QuizRepositoryImplTest.kt" afterPath="$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/repository/QuizRepositoryImplTest.kt" />
       <change beforePath="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/controller/RoundController.kt" afterPath="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/controller/RoundController.kt" />
+      <change beforePath="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/converters/RoundConverter.kt" afterPath="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/converters/RoundConverter.kt" />
+      <change beforePath="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/model/Round.kt" afterPath="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/model/Round.kt" />
+      <change beforePath="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/repository/RoundRepository.kt" afterPath="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/repository/RoundRepository.kt" />
       <change beforePath="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/ControllerTestBase.kt" afterPath="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/ControllerTestBase.kt" />
       <change beforePath="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt" afterPath="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt" />
       <change beforePath="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundConverterTest.kt" afterPath="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundConverterTest.kt" />
+      <change beforePath="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundRepositoryTest.kt" afterPath="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundRepositoryTest.kt" />
       <change beforePath="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/RoundDto.kt" afterPath="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/RoundDto.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,6 +34,7 @@
     <ignored path="$PROJECT_DIR$/eureka/target/" />
     <ignored path="$PROJECT_DIR$/gateway/target/" />
     <ignored path="$PROJECT_DIR$/round/target/" />
+    <ignored path="$PROJECT_DIR$/gamelogic/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,73 +49,118 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <file leaf-file-name="QuizMockServiceTest.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gamelogic/src/test/kotlin/com/stella/game/gamelogic/services/QuizMockServiceTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="85" column="24" lean-forward="false" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoundControllerTest.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="919">
-              <caret line="210" column="32" lean-forward="false" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
+            <state relative-caret-position="680">
+              <caret line="40" column="55" lean-forward="false" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
               <folding>
-                <element signature="e#31#311#0" expanded="true" />
+                <element signature="e#44#306#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/resources/application.yml">
+      <file leaf-file-name="QuizMockService.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/services/QuizMockService.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            <state relative-caret-position="174">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoundApplicationConfig.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/RoundApplicationConfig.kt">
+      <file leaf-file-name="NativeMethodAccessorImpl.class" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="36" column="44" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+            <state relative-caret-position="381">
+              <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+              <folding>
+                <marker date="1477751054594" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1477751054594" expanded="false" signature="135:249" ph="..." />
+                <marker date="1477751054594" expanded="false" signature="467:478" ph=" { " />
+                <marker date="1477751054594" expanded="false" signature="497:503" ph=" }" />
+                <marker date="1477751054594" expanded="true" signature="617:1158" ph="{...}" />
+                <marker date="1477751054594" expanded="false" signature="1213:1224" ph=" { " />
+                <marker date="1477751054594" expanded="false" signature="1243:1249" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameLogicController.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-182">
+              <caret line="161" column="14" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoundApplication.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/RoundApplication.kt">
+      <file leaf-file-name="QuizRepositoryImplTest.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/repository/QuizRepositoryImplTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="335">
+              <caret line="93" column="30" lean-forward="false" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/round/src/main/resources/application.yml">
+      <file leaf-file-name="TEST-com.stella.game.quiz.controller.QuizRepositoryImplTest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/target/surefire-reports/TEST-com.stella.game.quiz.controller.QuizRepositoryImplTest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application-docker.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/round/src/main/resources/application-docker.yml">
+      <file leaf-file-name="TEST-com.stella.game.quiz.repository.EntityRepositoryImplTest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/target/surefire-reports/TEST-com.stella.game.quiz.repository.EntityRepositoryImplTest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="15" />
+            <state relative-caret-position="17">
+              <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="com.stella.game.quiz.repository.EntityRepositoryImplTest.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/target/surefire-reports/com.stella.game.quiz.repository.EntityRepositoryImplTest.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DelegatingMethodAccessorImpl.class" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <marker date="1477751054594" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1477751054594" expanded="false" signature="344:355" ph=" { " />
+                <marker date="1477751054594" expanded="false" signature="378:384" ph=" }" />
+                <marker date="1477751054594" expanded="true" signature="498:554" ph="{...}" />
+                <marker date="1477751054594" expanded="false" signature="601:612" ph=" { " />
+                <marker date="1477751054594" expanded="false" signature="633:639" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameLogicApplication.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/GameLogicApplication.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -168,57 +224,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/quiz/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/quiz/src/main/resources/application-docker.yml" />
-        <option value="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/QuizDto.kt" />
-        <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" />
-        <option value="$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/repository/QuizRepositoryImplTest.kt" />
-        <option value="$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/QuizControllerTest.kt" />
-        <option value="$PROJECT_DIR$/subcategory/pom.xml" />
-        <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplicationConfig.kt" />
-        <option value="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/SubcategoryApplicationConfig.kt" />
-        <option value="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt" />
-        <option value="$PROJECT_DIR$/player/src/main/resources/application-docker.yml" />
-        <option value="$PROJECT_DIR$/gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/GatewayApplicationConfig.kt" />
-        <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/GatewayApplication.kt" />
-        <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/domain/UserDto.kt" />
-        <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/domain/UserEntity.kt" />
-        <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/domain/UserConverter.kt" />
-        <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/domain/model/UserConverter.kt" />
-        <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/repository/UserRepository.kt" />
-        <option value="$PROJECT_DIR$/gateway/src/test/kotlin/com/stella/game/gateway/UserRepositoryTest.kt" />
-        <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/service/UserService.kt" />
-        <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/service/AmpqService.kt" />
-        <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/controller/AuthController.kt" />
-        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/RoundApplication.kt" />
-        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/Round.kt" />
-        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/RoundConstraintValidator.kt" />
-        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/RoundConstraint.kt" />
-        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/model/RoundConstraintValidator.kt" />
-        <option value="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/PlayerDto.kt" />
-        <option value="$PROJECT_DIR$/round/pom.xml" />
-        <option value="$PROJECT_DIR$/round/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/round/Dockerfile" />
         <option value="$PROJECT_DIR$/round/src/main/resources/application-docker.yml" />
         <option value="$PROJECT_DIR$/round/src/test/kotlin/resources/application.yml" />
         <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/model/RoundConstraint.kt" />
-        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/converters/RoundConverter.kt" />
-        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/repository/RoundRepository.kt" />
-        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/model/Round.kt" />
-        <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundRepositoryTest.kt" />
         <option value="$PROJECT_DIR$/gateway/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/gateway/src/main/resources/application-docker.yml" />
         <option value="$PROJECT_DIR$/gateway/src/main/resources/application-security.yml" />
         <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/WebSecurityConfig.kt" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundConverterTest.kt" />
-        <option value="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/RoundDto.kt" />
-        <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/ControllerTestBase.kt" />
-        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/controller/RoundController.kt" />
-        <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt" />
         <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/RoundApplicationConfig.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/pom.xml" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/WebSecurityConfig.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/GameLogicApplicationConfig.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/GameLogicApplication.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/gamelogic/GameLogicApplication.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/test/kotlin/com/stella/game/gamelogic/services/AmpqService.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/test/kotlin/com/stella/game/gamelogic/services/AmqpService.kt" />
+        <option value="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/gamelogic/QuizResultLogDto.kt" />
+        <option value="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/gamelogic/PlayerSearchDto.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/test/kotlin/com/stella/game/gamelogic/domain/Participant.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/test/kotlin/com/stella/game/gamelogic/domain/Question.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/test/kotlin/com/stella/game/gamelogic/domain/Log.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/test/kotlin/com/stella/game/gamelogic/services/QuizSimulatorService.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/GameLogicApplication.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/converters/PlayerSearchConverter.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/services/QuizSimulatorService.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/model/Question.kt" />
+        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/model/Round.kt" />
+        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/repository/RoundRepository.kt" />
+        <option value="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/RoundDto.kt" />
+        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/controller/RoundController.kt" />
+        <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/converters/RoundConverter.kt" />
+        <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundRepositoryTest.kt" />
+        <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundConverterTest.kt" />
+        <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/ControllerTestBase.kt" />
+        <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt" />
+        <option value="$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/repository/QuizRepositoryImplTest.kt" />
+        <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/repository/QuizRepository.kt" />
+        <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt" />
+        <option value="$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/QuizControllerTest.kt" />
+        <option value="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/gamelogic/QuizRoundDto.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/converters/QuestionConverter.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/converters/QuizForRoundConverter.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/resources/application-docker.yml" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/gamelogic/src/test/resources/application.yml" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/converters/PlayerQuizRoundConverter.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/model/Participant.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/services/QuizMockService.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/test/kotlin/com/stella/game/gamelogic/services/QuizMockServiceTest.kt" />
       </list>
     </option>
   </component>
@@ -268,163 +324,78 @@
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="converters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="game" type="b2602c69:ProjectViewProjectNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="round" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="schema" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="schema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="schema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="schema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="schema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="schema" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,32 +411,32 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.stella.game.gamelogic.domain.model" />
+      <recent name="com.stella.game.gamelogic.services" />
+      <recent name="com.stella.game.gamelogic.domain" />
       <recent name="com.stella.game.gateway.domain.model" />
       <recent name="com.stella.game.category.domain.converter" />
-      <recent name="com.stella.game.category.domain.model" />
-      <recent name="com.stella.game.category.domain" />
-      <recent name="com.stella.game.quiz.controller" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.stella.game.quiz.controller" />
       <recent name="com.stella.game.quiz.domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sathi\Downloads\game\gamelogic\src\main\kotlin\com\stella\game" />
       <recent name="C:\Users\sathi\Downloads\game\round\src\main\kotlin\com\stella\game\round\domain\model" />
       <recent name="C:\Users\sathi\Downloads\game" />
       <recent name="C:\Users\sathi\Downloads\game\quiz\src\main" />
       <recent name="C:\Users\sathi\Downloads\game\subcategory\src\test" />
-      <recent name="C:\Users\sathi\Downloads\game\subcategory\src\main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.stella.game.quiz" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sathi\Downloads\game\gamelogic\src\test" />
+      <recent name="C:\Users\sathi\Downloads\game\gamelogic\src\main" />
+      <recent name="C:\Users\sathi\Downloads\game\gamelogic" />
       <recent name="C:\Users\sathi\Downloads\game\round\src\test\kotlin\resources" />
       <recent name="C:\Users\sathi\Downloads\game\round" />
-      <recent name="C:\Users\sathi\Downloads\game\gateway" />
-      <recent name="C:\Users\sathi\Downloads\game\round\src\main\resources" />
-      <recent name="C:\Users\sathi\Downloads\game\gateway\src\test\resources" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.stella.game.round.domain.model" />
@@ -483,7 +454,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RoundControllerTest">
+  <component name="RunManager" selected="JUnit.EntityRepositoryImplTest.testFindRandomQuiz">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
@@ -504,44 +475,19 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="RoundControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EntityRepositoryImplTest.testFindRandomQuiz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.stella.game.round.*" />
+          <option name="PATTERN" value="com.stella.game.quiz.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="round" />
+      <module name="quiz" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.stella.game.round" />
-      <option name="MAIN_CLASS_NAME" value="com.stella.game.round.RoundControllerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="RoundControllerTest.testDeleteMatchResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.stella.game.round.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="round" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.stella.game.round" />
-      <option name="MAIN_CLASS_NAME" value="com.stella.game.round.RoundControllerTest" />
-      <option name="METHOD_NAME" value="testDeleteMatchResult" />
+      <option name="PACKAGE_NAME" value="com.stella.game.quiz.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.stella.game.quiz.repository.EntityRepositoryImplTest" />
+      <option name="METHOD_NAME" value="testFindRandomQuiz" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -554,19 +500,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="RoundControllerTest.testUpdateRound_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuizMockServiceTest.roundTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.stella.game.round.*" />
+          <option name="PATTERN" value="com.stella.game.gamelogic.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="round" />
+      <module name="gamelogic" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.stella.game.round" />
-      <option name="MAIN_CLASS_NAME" value="com.stella.game.round.RoundControllerTest" />
-      <option name="METHOD_NAME" value="testUpdateRound_Success" />
+      <option name="PACKAGE_NAME" value="com.stella.game.gamelogic.services" />
+      <option name="MAIN_CLASS_NAME" value="com.stella.game.gamelogic.services.QuizMockServiceTest" />
+      <option name="METHOD_NAME" value="roundTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -579,19 +525,44 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="RoundControllerTest.testUpdateWinnerName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuizRepositoryImplTest.testGetARandomQuiz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.stella.game.round.*" />
+          <option name="PATTERN" value="com.stella.game.quiz.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="round" />
+      <module name="quiz" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.stella.game.round" />
-      <option name="MAIN_CLASS_NAME" value="com.stella.game.round.RoundControllerTest" />
-      <option name="METHOD_NAME" value="testUpdateWinnerName" />
+      <option name="PACKAGE_NAME" value="com.stella.game.quiz.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.stella.game.quiz.controller.QuizRepositoryImplTest" />
+      <option name="METHOD_NAME" value="testGetARandomQuiz" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="QuizRepositoryImplTest.testGetRandomQuizzes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.stella.game.quiz.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="quiz" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.stella.game.quiz.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.stella.game.quiz.controller.QuizRepositoryImplTest" />
+      <option name="METHOD_NAME" value="testGetRandomQuizzes" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -624,17 +595,17 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="com.stella.game.round in round" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.stella.game.quiz in quiz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.stella.game.round.*" />
+          <option name="PATTERN" value="com.stella.game.quiz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="round" />
+      <module name="quiz" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.stella.game.round" />
+      <option name="PACKAGE_NAME" value="com.stella.game.quiz" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -668,6 +639,12 @@
       <module name="category" />
       <envs />
     </configuration>
+    <configuration name="Application (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stella.game.round.Application" />
+      <module name="round" />
+      <envs />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.stella.game.quiz.Application" />
@@ -678,6 +655,12 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.stella.game.eureka.EurekaServerApplication" />
       <module name="eureka" />
+      <envs />
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stella.game.gateway.GatewayApplication" />
+      <module name="gateway" />
       <envs />
     </configuration>
     <configuration name="PlayerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -719,25 +702,27 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="10">
+    <list size="12">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.PlayerApplication" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.Application" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.Application (1)" />
       <item index="3" class="java.lang.String" itemvalue="Spring Boot.Application (2)" />
       <item index="4" class="java.lang.String" itemvalue="Spring Boot.EurekaServerApplication" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.RoundControllerTest.testDeleteMatchResult" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.RoundControllerTest.testUpdateRound_Success" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.RoundControllerTest.testUpdateWinnerName" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.com.stella.game.round in round" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.RoundControllerTest" />
+      <item index="5" class="java.lang.String" itemvalue="Spring Boot.GatewayApplication" />
+      <item index="6" class="java.lang.String" itemvalue="Spring Boot.Application (3)" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.QuizRepositoryImplTest.testGetARandomQuiz" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.EntityRepositoryImplTest.testFindRandomQuiz" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.QuizRepositoryImplTest.testGetRandomQuizzes" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.QuizMockServiceTest.roundTest" />
+      <item index="11" class="java.lang.String" itemvalue="JUnit.com.stella.game.quiz in quiz" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RoundControllerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.com.stella.game.round in round" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RoundControllerTest.testUpdateWinnerName" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RoundControllerTest.testUpdateRound_Success" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RoundControllerTest.testDeleteMatchResult" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.EntityRepositoryImplTest.testFindRandomQuiz" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.com.stella.game.quiz in quiz" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.QuizMockServiceTest.roundTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.QuizRepositoryImplTest.testGetRandomQuizzes" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.QuizRepositoryImplTest.testGetARandomQuiz" />
       </list>
     </recent_temporary>
   </component>
@@ -760,7 +745,8 @@
       <workItem from="1523814593151" duration="932000" />
       <workItem from="1524035313015" duration="1434000" />
       <workItem from="1524065080312" duration="42839000" />
-      <workItem from="1524507190754" duration="6013000" />
+      <workItem from="1524507190754" duration="19890000" />
+      <workItem from="1524927336277" duration="17614000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1524036541862</created>
@@ -780,39 +766,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RoundControllerTest - 2018.04.23 at 22h 23m 04s.xml">
-      <configuration name="RoundControllerTest" configurationId="JUnit" />
+    <history-entry file="EntityRepositoryImplTest_testFindRandomQuiz - 2018.04.28 at 22h 22m 34s.xml">
+      <configuration name="EntityRepositoryImplTest.testFindRandomQuiz" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoundControllerTest_testCreateMatchResult - 2018.04.23 at 21h 16m 24s.xml">
-      <configuration name="RoundControllerTest.testCreateMatchResult" configurationId="JUnit" />
+    <history-entry file="EntityRepositoryImplTest_testFindRandomQuiz - 2018.04.28 at 22h 22m 42s.xml">
+      <configuration name="EntityRepositoryImplTest.testFindRandomQuiz" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoundControllerTest_testCreateMatchResult - 2018.04.23 at 21h 18m 05s.xml">
-      <configuration name="RoundControllerTest.testCreateMatchResult" configurationId="JUnit" />
+    <history-entry file="EntityRepositoryImplTest_testFindRandomQuiz - 2018.04.28 at 22h 22m 49s.xml">
+      <configuration name="EntityRepositoryImplTest.testFindRandomQuiz" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoundControllerTest_testDeleteMatchResult - 2018.04.23 at 22h 03m 05s.xml">
-      <configuration name="RoundControllerTest.testDeleteMatchResult" configurationId="JUnit" />
+    <history-entry file="EntityRepositoryImplTest_testFindRandomQuiz - 2018.04.28 at 22h 22m 56s.xml">
+      <configuration name="EntityRepositoryImplTest.testFindRandomQuiz" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoundControllerTest_testGetResultMatch - 2018.04.23 at 21h 22m 21s.xml">
-      <configuration name="RoundControllerTest.testGetResultMatch" configurationId="JUnit" />
+    <history-entry file="QuizMockServiceTest_roundTest - 2018.04.28 at 22h 19m 34s.xml">
+      <configuration name="QuizMockServiceTest.roundTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoundControllerTest_testGetRounds - 2018.04.23 at 21h 19m 26s.xml">
-      <configuration name="RoundControllerTest.testGetRounds" configurationId="JUnit" />
+    <history-entry file="QuizMockServiceTest_roundTest - 2018.04.28 at 22h 19m 36s.xml">
+      <configuration name="QuizMockServiceTest.roundTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoundControllerTest_testUpdateRound_Success - 2018.04.23 at 22h 08m 57s.xml">
-      <configuration name="RoundControllerTest.testUpdateRound_Success" configurationId="JUnit" />
+    <history-entry file="QuizMockServiceTest_roundTest - 2018.04.28 at 22h 19m 38s.xml">
+      <configuration name="QuizMockServiceTest.roundTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoundControllerTest_testUpdateRound_Success - 2018.04.23 at 22h 11m 40s.xml">
-      <configuration name="RoundControllerTest.testUpdateRound_Success" configurationId="JUnit" />
+    <history-entry file="QuizMockServiceTest_roundTest - 2018.04.28 at 22h 19m 40s.xml">
+      <configuration name="QuizMockServiceTest.roundTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoundControllerTest_testUpdateWinnerName - 2018.04.23 at 22h 15m 28s.xml">
-      <configuration name="RoundControllerTest.testUpdateWinnerName" configurationId="JUnit" />
+    <history-entry file="QuizMockServiceTest_roundTest - 2018.04.28 at 22h 19m 43s.xml">
+      <configuration name="QuizMockServiceTest.roundTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_stella_game_round_in_round - 2018.04.23 at 22h 15m 56s.xml">
-      <configuration name="com.stella.game.round in round" configurationId="JUnit" />
+    <history-entry file="com_stella_game_quiz_in_quiz - 2018.04.28 at 22h 25m 05s.xml">
+      <configuration name="com.stella.game.quiz in quiz" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125859000" />
+    <option name="totallyTimeSpent" value="157350000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -828,30 +814,31 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5612565" sideWeight="0.092315905" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21354167" sideWeight="0.24366042" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31875" sideWeight="0.79933846" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45729166" sideWeight="0.7563396" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16458334" sideWeight="0.40565032" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.259375" sideWeight="0.36438808" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19791667" sideWeight="0.76957" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.49779493" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31770834" sideWeight="0.7232635" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.325" sideWeight="0.9076841" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26571113" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44375" sideWeight="0.8368247" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2684675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.225" sideWeight="0.48511577" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -861,8 +848,44 @@
       <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16458334" sideWeight="0.48933902" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21354167" sideWeight="0.24366042" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21354167" sideWeight="0.7563396" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.259375" sideWeight="0.36438808" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.49779493" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33541667" sideWeight="0.7232635" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.325" sideWeight="0.8368247" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2684675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.225" sideWeight="0.48511577" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -922,416 +945,153 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/repository/QuizRepositoryImplTest.kt</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/repository/QuizRepositoryImplTest.kt</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundRepositoryTest.kt</url>
-          <line>258</line>
+          <line>222</line>
           <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundConverterTest.kt</url>
-          <line>44</line>
+          <url>file://$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/QuizControllerTest.kt</url>
+          <line>177</line>
           <properties />
-          <option name="timeStamp" value="48" />
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/ControllerTestBase.kt</url>
-          <line>62</line>
+          <url>file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/services/QuizMockService.kt</url>
+          <line>15</line>
           <properties />
-          <option name="timeStamp" value="50" />
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/ControllerTestBase.kt</url>
-          <line>66</line>
+          <url>file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/services/QuizMockService.kt</url>
+          <line>12</line>
           <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/controller/RoundController.kt</url>
-          <line>85</line>
-          <properties />
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/controller/RoundController.kt</url>
-          <line>188</line>
-          <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/controller/RoundController.kt</url>
-          <line>152</line>
-          <properties />
-          <option name="timeStamp" value="61" />
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="62" />
+      <option name="time" value="79" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/round/pom.xml">
+    <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/repository/QuizRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="391">
+          <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/domain/model/Quiz.kt">
+    <entry file="file://$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/controller/QuizControllerTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="-211">
+          <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/CategoryDto.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/PlayerDto.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/QuizDto.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="16" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/controller/QuizController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="291" column="51" lean-forward="false" selection-start-line="291" selection-start-column="51" selection-end-line="291" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/domain/converters/QuizConverter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#48#131#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/HelloTest.kt" />
-    <entry file="file://$PROJECT_DIR$/gateway/src/test/kotlin/com/stella/game/gateway/UserRepositoryTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/round/target/surefire-reports/com.stella.game.round.MatchResultRepositoryTest.txt" />
-    <entry file="file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/repository/RoundRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="114" column="19" lean-forward="true" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+        <state relative-caret-position="391">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestClassCallbacks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunAfterTestClassCallbacks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="370" column="0" lean-forward="false" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
-          <folding>
-            <element signature="e#2922#2923#0" expanded="false" />
-            <element signature="e#2966#2967#0" expanded="false" />
-            <element signature="e#10310#10449#0" expanded="false" />
-            <element signature="e#10448#10449#0" expanded="false" />
-            <element signature="e#11040#11204#0" expanded="false" />
-            <element signature="e#11203#11204#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.11.RELEASE/spring-test-4.3.11.RELEASE-sources.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runner/JUnitCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+    <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/gamelogic/QuizResultLogDto.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+    <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/gamelogic/QuizRoundDto.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding>
-            <element signature="e#1657#1658#0" expanded="false" />
+            <element signature="e#42#127#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application-security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/test/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/PlayerApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/PlayerApplicationConfig.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="62" column="17" lean-forward="false" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/javax/sql/DataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/kotlin/com/stella/game/eureka/EurekaApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-docker.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/gamelogic/PlayerSearchDto.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application-docker.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/GatewayApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/GatewayApplicationConfig.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/WebSecurityConfig.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/controller/AuthController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="75" column="8" lean-forward="false" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/QuizDto.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/model/RoundConstraintValidator.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/model/RoundConstraint.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/model/Round.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundConverterTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#31#225#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/converters/RoundConverter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/RoundDto.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/ControllerTestBase.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="847">
-          <caret line="65" column="87" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="65" selection-end-column="87" />
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/controller/RoundController.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="195" column="33" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+        <state relative-caret-position="-64">
+          <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundRepositoryTest.kt">
+    <entry file="file://$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/RoundDto.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="333" column="18" lean-forward="false" selection-start-line="322" selection-start-column="12" selection-end-line="333" selection-end-column="18" />
+        <state relative-caret-position="408">
+          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt">
+    <entry file="file://$PROJECT_DIR$/quiz/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="919">
-          <caret line="210" column="32" lean-forward="false" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
-          <folding>
-            <element signature="e#31#311#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        <state relative-caret-position="306">
+          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/RoundApplicationConfig.kt">
+    <entry file="file://$PROJECT_DIR$/player/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="36" column="44" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+        <state relative-caret-position="306">
+          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/RoundApplication.kt">
+    <entry file="file://$PROJECT_DIR$/player/src/main/resources/application-docker.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1344,15 +1104,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/main/resources/application-docker.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/round/target/surefire-reports/TEST-com.stella.game.round.MatchResultRepositoryTest.xml">
+    <entry file="file://$PROJECT_DIR$/subcategory/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1360,7 +1112,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/round/target/surefire-reports/TEST-com.stella.game.round.RoundConverterTest.xml">
+    <entry file="file://$PROJECT_DIR$/category/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1368,18 +1120,299 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/round/target/surefire-reports/TEST-com.stella.game.round.RoundControllerTest.xml">
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/resources/application-docker.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-995">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/WebSecurityConfig.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/services/AmqpService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/model/Question.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/model/Log.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/converters/PlayerSearchConverter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/converters/QuizRoundConverter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/converters/QuizForRoundConverter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#53#145#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="16" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="85" column="24" lean-forward="false" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+        <state relative-caret-position="572">
+          <caret line="100" column="21" lean-forward="false" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/model/Participant.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/converters/PlayerQuizRoundConverter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/test/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/GameLogicApplicationConfig.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/RunAfters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="370" column="0" lean-forward="false" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
+          <folding>
+            <element signature="e#2922#2923#0" expanded="false" />
+            <element signature="e#2966#2967#0" expanded="false" />
+            <element signature="e#10310#10449#0" expanded="false" />
+            <element signature="e#10448#10449#0" expanded="false" />
+            <element signature="e#11040#11204#0" expanded="false" />
+            <element signature="e#11203#11204#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runner/JUnitCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runner/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runner/notification/RunNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="e#1930#1931#0" expanded="false" />
+            <element signature="e#1969#1970#0" expanded="false" />
+            <element signature="e#2029#2030#0" expanded="false" />
+            <element signature="e#2093#2094#0" expanded="false" />
+            <element signature="e#2233#2246#0" expanded="false" />
+            <element signature="e#2313#2322#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runner/notification/SynchronizedRunListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="497" column="0" lean-forward="false" selection-start-line="497" selection-start-column="0" selection-end-line="497" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <marker date="1477751054594" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1477751054594" expanded="false" signature="135:249" ph="..." />
+            <marker date="1477751054594" expanded="false" signature="467:478" ph=" { " />
+            <marker date="1477751054594" expanded="false" signature="497:503" ph=" }" />
+            <marker date="1477751054594" expanded="true" signature="617:1158" ph="{...}" />
+            <marker date="1477751054594" expanded="false" signature="1213:1224" ph=" { " />
+            <marker date="1477751054594" expanded="false" signature="1243:1249" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/GameLogicApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1477751054594" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1477751054594" expanded="false" signature="344:355" ph=" { " />
+            <marker date="1477751054594" expanded="false" signature="378:384" ph=" }" />
+            <marker date="1477751054594" expanded="true" signature="498:554" ph="{...}" />
+            <marker date="1477751054594" expanded="false" signature="601:612" ph=" { " />
+            <marker date="1477751054594" expanded="false" signature="633:639" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/services/QuizMockService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/test/kotlin/com/stella/game/gamelogic/services/QuizMockServiceTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="55" lean-forward="false" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+          <folding>
+            <element signature="e#44#306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <caret line="161" column="14" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/target/surefire-reports/TEST-com.stella.game.quiz.controller.QuizRepositoryImplTest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/target/surefire-reports/TEST-com.stella.game.quiz.repository.EntityRepositoryImplTest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/target/surefire-reports/com.stella.game.quiz.repository.EntityRepositoryImplTest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/src/test/kotlin/com/stella/game/quiz/repository/QuizRepositoryImplTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="93" column="30" lean-forward="false" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1436,7 +1469,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>game</last-edited>
+          <last-edited>gamelogic</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

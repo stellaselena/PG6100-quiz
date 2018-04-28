@@ -1,7 +1,6 @@
 package com.stella.game.round.domain.converters
 import com.stella.game.round.domain.model.Round
 import com.stella.game.schema.PlayerResultDto
-import com.stella.game.schema.QuizResultDto
 import com.stella.game.schema.RoundDto
 
 class RoundConverter {
@@ -17,12 +16,6 @@ class RoundConverter {
                             entity.player2Id.toString(),
                             entity.player2Username,
                             entity.player2CorrectAnswers),
-                    quiz = QuizResultDto(
-                            entity.quizId.toString(),
-                            entity.quizQuestion,
-                            entity.quizAnswers,
-                            entity.quizCorrectAnswer
-                    ),
                     winnerName = entity.winnerName,
                     creationTime = entity.creationTime
             )

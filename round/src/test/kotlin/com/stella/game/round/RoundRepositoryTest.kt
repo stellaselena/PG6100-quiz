@@ -13,7 +13,7 @@ import javax.validation.ConstraintViolationException
 
 @RunWith(SpringRunner::class)
 @DataJpaTest
-class MatchResultRepositoryTest {
+class RoundRepositoryTest {
 
     @Autowired
     private lateinit var crud: RoundRepository
@@ -31,11 +31,7 @@ class MatchResultRepositoryTest {
                 "u2",
                 3,
                 2,
-                "u2",
-                1,
-                "question",
-                mutableListOf("a", "b", "c", "d"),
-                1)
+                "u2")
     }
     private fun createRoundForUsername(username: String) : Long {
         return crud.createRound(
@@ -45,11 +41,7 @@ class MatchResultRepositoryTest {
                 "u2",
                 3,
                 2,
-                "u2",
-                1,
-                "question",
-                mutableListOf("a", "b", "c", "d"),
-                1)
+                "u2")
     }
     private fun createRound(round: Round): Round? {
         return crud.save(round)
@@ -66,11 +58,7 @@ class MatchResultRepositoryTest {
                     "u2",
                     3,
                     2,
-                    "u2",
-                    1,
-                    "question",
-                    mutableListOf("a", "b", "c", "d"),
-                    1)
+                    "u2")
             Assert.fail()
         }
         catch (e : ConstraintViolationException){}
@@ -84,11 +72,7 @@ class MatchResultRepositoryTest {
                     "u2",
                     3,
                     2,
-                    "u3",
-                    1,
-                    "question",
-                    mutableListOf("a", "b", "c", "d"),
-                    1)
+                    "u3")
             Assert.fail()
         }
         catch (e : ConstraintViolationException){}
@@ -134,11 +118,7 @@ class MatchResultRepositoryTest {
                     "u2",
                     3,
                     2,
-                    "u2",
-                    1,
-                    "question",
-                    mutableListOf("a", "b", "c", "d"),
-                    1)
+                    "u2")
             Assert.fail()
         } catch (e: ConstraintViolationException) {
         }
@@ -182,11 +162,7 @@ class MatchResultRepositoryTest {
                 2,
                 winnerName,
                 null,
-                null,
-                1,
-                "question",
-                mutableListOf("a", "b","c", "d"),
-                1
+                null
                 )
         crud.save(round1)
         val id = round1.id!!
@@ -198,11 +174,7 @@ class MatchResultRepositoryTest {
                 4,
                 2,
                 "athena",
-                id,
-                1,
-                "question",
-                mutableListOf("a", "b","c", "d"),
-                1
+                id
         )
 
         //Assert
@@ -225,11 +197,7 @@ class MatchResultRepositoryTest {
                 2,
                 winnerName,
                 null,
-                null,
-                1,
-                "question",
-                mutableListOf("a", "b","c", "d"),
-                1)
+                null)
         crud.save(round1)
         val id = round1.id!!
         //Act
@@ -239,11 +207,7 @@ class MatchResultRepositoryTest {
                 3,
                 2,
                 winnerName,
-                id,
-                1,
-                "question",
-                mutableListOf("a", "b","c", "d"),
-                1)
+                id)
 
         //Assert
         Assert.assertFalse(updated)
@@ -267,11 +231,7 @@ class MatchResultRepositoryTest {
                 2,
                 oldWinner,
                 null,
-                null,
-                1,
-                "question",
-                mutableListOf("a", "b","c", "d"),
-                1)
+                null)
         crud.save(round1)
         val id = round1.id!!
         Assert.assertEquals(1, crud.count())
@@ -303,11 +263,7 @@ class MatchResultRepositoryTest {
                 "u2",
                 3,
                 2,
-                "u2",
-                1,
-                "question",
-                mutableListOf("a", "b", "c", "d"),
-                1)
+                "u2")
         val id2 =  crud.createRound(
                 1,
                 2,
@@ -315,11 +271,7 @@ class MatchResultRepositoryTest {
                 "u2",
                 3,
                 2,
-                "u2",
-                1,
-                "question",
-                mutableListOf("a", "b", "c", "d"),
-                1)
+                "u2")
         val id3 =  crud.createRound(
                 1,
                 2,
@@ -327,11 +279,7 @@ class MatchResultRepositoryTest {
                 "u2",
                 3,
                 2,
-                "u2",
-                1,
-                "question",
-                mutableListOf("a", "b", "c", "d"),
-                1)
+                "u2")
 
         // Act
         val lastMatchResult = crud.getLastRoundByUserName("u1")

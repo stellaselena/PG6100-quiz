@@ -29,25 +29,23 @@ import java.util.logging.Logger
 @Validated
 class QuizController {
 
-    private val logger : Logger = Logger.getLogger(QuizController::class.java.canonicalName)
+    private val logger: Logger = Logger.getLogger(QuizController::class.java.canonicalName)
 
 
     @Autowired
     private lateinit var rest: RestTemplate
 
     @Value("\${subcategoryServerName}")
-    private lateinit var subcategoryHost : String
+    private lateinit var subcategoryHost: String
     @Autowired
     private lateinit var repo: QuizRepository
-
-
 
 
     @ApiOperation("Get all the quizzes")
     @GetMapping
     fun getQuizzes(@ApiParam("Subcategory name")
-            @RequestParam("subcategory", required = false)
-            subcategoryId: Long?
+                   @RequestParam("subcategory", required = false)
+                   subcategoryId: Long?
 
     ): ResponseEntity<List<QuizDto>> {
 
@@ -59,6 +57,7 @@ class QuizController {
 
         return ResponseEntity.ok(QuizConverter.transform(list))
     }
+
     @ApiOperation("Get a single quiz specified by id")
     @GetMapping(path = arrayOf("/{id}"))
     fun getQuiz(@ApiParam("Quiz id")
@@ -94,7 +93,6 @@ class QuizController {
             return 0
         }
     }
-
 
 
     @ApiOperation("Create a quiz")
@@ -238,41 +236,32 @@ class QuizController {
 
     @ApiOperation("Get a random quiz with option for specifying subcategories")
     @GetMapping(path = arrayOf("/randomQuiz"), consumes = arrayOf(MediaType.APPLICATION_JSON_UTF8_VALUE))
+    @ApiResponses(
+            ApiResponse(code = 404, message = "Could not find id or quiz with specified id")
+    )
     fun getRandom(
-                  @ApiParam("with subcategory option")
-                  @RequestParam(value = "subcategory", required = false) subcategoryId: Long?
+            @ApiParam("with subcategory option")
+            @RequestParam(value = "subcategory", required = false) subcategoryId: Long?
     ): ResponseEntity<QuizDto> {
 
         val quizzes = repo.findAll()
-        var quizId = repo.findARandomQuiz(quizzes).id
+        val quiz = repo.findARandomQuiz(quizzes) ?: return ResponseEntity.status(404).build()
 
         if (subcategoryId != null) {
-            try {
-
-                quizId = repo.findRandomQuizWithSubcategory(quizzes, subcategoryId)!!.id
-                val dto = repo.findOne(quizId)
-                return ResponseEntity.ok(QuizConverter.transform(dto))
-
-
-
-            } catch (e:  IllegalArgumentException) {
-                return ResponseEntity.status(404).build()
-            }
+            val randomQuizWithSubcategory = repo.findRandomQuizWithSubcategory(quizzes, subcategoryId)!!
+                    ?: return ResponseEntity.status(404).build()
+            return ResponseEntity.ok(QuizConverter.transform(randomQuizWithSubcategory))
 
         } else {
-            if (quizId!= null){
-                val dto = repo.findOne(quizId)
-                return ResponseEntity.ok(QuizConverter.transform(dto))
-
-            } else {
-                return ResponseEntity.status(404).build()
-            }
+            return ResponseEntity.ok(QuizConverter.transform(quiz))
         }
-
     }
 
     @ApiOperation("Get random quizzes")
     @GetMapping(path = arrayOf("/randomQuizzes"))
+    @ApiResponses(
+            ApiResponse(code = 400, message = "Could not gather enough random quizzes")
+    )
     fun getRandomQuizzes(
             @ApiParam("Subcategory name")
             @RequestParam(value = "subcategory", required = false)
@@ -281,51 +270,32 @@ class QuizController {
             : ResponseEntity<List<QuizDto>> {
 
         val quizzes = repo.findAll()
-        val size = if (n!! > 2) {
-            n
-        } else {
-            2
+        val size = if (n!! > 2) n else 2
+        if (quizzes.count() < size) {
+            return ResponseEntity.status(404).build()
         }
-        val list: MutableList<Quiz> = listOf<Quiz>().toMutableList()
-
+        val list = mutableListOf<Quiz>()
         if (subcategory != null) {
             for (i in 1..size) {
-                try {
-                    list.add(repo.findRandomQuizWithSubcategory(quizzes, subcategory)!!)
-
-                } catch (e: IllegalArgumentException) {
-                    return ResponseEntity.status(404).build()
-                }
-                return when {
-                    list.distinct().count() > size -> ResponseEntity.ok(QuizConverter.transform(list))
-                    else -> ResponseEntity.status(404).build()
-                }
-
+                val foundQuiz = repo.findRandomQuizWithSubcategory(quizzes, subcategory)!!
+                        ?: return ResponseEntity.status(404).build()
+                list.add(foundQuiz)
             }
+            return ResponseEntity.ok(QuizConverter.transform(list))
 
-        } else  {
-
-            try{
+        } else {
+            try {
                 for (i in 1..size) {
-                    list.add(repo.findARandomQuiz(quizzes))
+                    val foundQuiz = repo.findARandomQuiz(quizzes) ?: return ResponseEntity.status(404).build()
+                    list.add(foundQuiz)
                 }
+                return ResponseEntity.ok(QuizConverter.transform(list))
 
-
-            } catch (e:IllegalArgumentException){
-                return ResponseEntity.status(404).build()
+            } catch (e: IllegalArgumentException) {
+                return ResponseEntity.status(400).build()
 
             }
-            return when {
-                list.distinct().count() > size -> ResponseEntity.ok(QuizConverter.transform(list))
-                else -> ResponseEntity.status(404).build()
-            }
-
 
         }
-        return ResponseEntity.status(404).build()
-
     }
-
-
-
 }

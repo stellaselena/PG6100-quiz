@@ -17,6 +17,7 @@
         <module>eureka</module>
         <module>gateway</module>
         <module>round</module>
+        <module>gamelogic</module>
     </modules>
 
     <properties>

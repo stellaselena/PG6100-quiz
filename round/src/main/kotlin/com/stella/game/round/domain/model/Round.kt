@@ -30,14 +30,5 @@ data class Round(
         var winnerName: String? = null,
         var creationTime: ZonedDateTime? = null,
         @get:Id @get:GeneratedValue
-        var id: Long? = null,
-        @get:NotNull
-        var quizId: Long? = null,
-        @get: NotBlank @get:Size(max =32)
-        var quizQuestion: String? = null,
-        @get:Size(min = 0, max = 4)
-        @get:ElementCollection
-        var quizAnswers: MutableList<String>,
-        @get:NotNull
-        var quizCorrectAnswer: Int
+        var id: Long? = null
 )

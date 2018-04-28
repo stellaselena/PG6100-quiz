@@ -1,7 +1,6 @@
 package com.stella.game.round
 
 import com.stella.game.schema.PlayerResultDto
-import com.stella.game.schema.QuizResultDto
 import com.stella.game.schema.RoundDto
 import io.restassured.RestAssured
 import io.restassured.http.ContentType
@@ -9,7 +8,7 @@ import org.hamcrest.CoreMatchers
 import org.junit.Assert
 import org.junit.Test
 
-class RoundControllerTest : ControllerTestBase(){
+class RoundControllerTest : ControllerTestBase() {
     @Test
     fun testCleanDB() {
         RestAssured.given().get().then()
@@ -18,7 +17,7 @@ class RoundControllerTest : ControllerTestBase(){
     }
 
     @Test
-    fun testCreateRound(){
+    fun testCreateRound() {
         var dto = getValidRoundDto()
 
         // valid dto
@@ -40,7 +39,7 @@ class RoundControllerTest : ControllerTestBase(){
     }
 
     @Test
-    fun testGetRounds(){
+    fun testGetRounds() {
         //Arrange
         val dto = getValidRoundDto()
         val id = postNewRoundValid(dto)
@@ -54,20 +53,20 @@ class RoundControllerTest : ControllerTestBase(){
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .param("username",dto.player1!!.username)
+                .param("username", dto.player1!!.username)
                 .get().then().statusCode(200)
                 .body("size()", CoreMatchers.equalTo(1))
 
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .param("username","nonexist")
+                .param("username", "nonexist")
                 .get().then()
                 .statusCode(200).body("size()", CoreMatchers.equalTo(0))
     }
 
     @Test
-    fun testGetRound(){
+    fun testGetRound() {
         // Arrange
         val dto = getValidRoundDto()
         val id = postNewRoundValid(dto)
@@ -75,7 +74,7 @@ class RoundControllerTest : ControllerTestBase(){
         val dtoRespone1 = RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .pathParam("id",id)
+                .pathParam("id", id)
                 .get("/{id}")
                 .then()
                 .statusCode(200)
@@ -86,7 +85,7 @@ class RoundControllerTest : ControllerTestBase(){
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .pathParam("id","invalid_input")
+                .pathParam("id", "invalid_input")
                 .get("/{id}")
                 .then()
                 .statusCode(400)
@@ -96,14 +95,14 @@ class RoundControllerTest : ControllerTestBase(){
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .pathParam("id",notExistMatchId)
+                .pathParam("id", notExistMatchId)
                 .get("{id}")
                 .then()
                 .statusCode(404)
     }
 
     @Test
-    fun testDeleteRound(){
+    fun testDeleteRound() {
         // Arrange
         val dto = getValidRoundDto()
         val id = postNewRoundValid(dto)
@@ -112,7 +111,7 @@ class RoundControllerTest : ControllerTestBase(){
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .pathParam("id",id)
+                .pathParam("id", id)
                 .delete("/{id}")
                 .then()
                 .statusCode(204)
@@ -121,7 +120,7 @@ class RoundControllerTest : ControllerTestBase(){
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .pathParam("id","invalid_input")
+                .pathParam("id", "invalid_input")
                 .delete("/{id}")
                 .then()
                 .statusCode(400)
@@ -131,21 +130,20 @@ class RoundControllerTest : ControllerTestBase(){
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .pathParam("id",notExistMatchId)
+                .pathParam("id", notExistMatchId)
                 .delete("{id}")
                 .then()
                 .statusCode(404)
     }
 
     @Test
-    fun testUpdateRound_Success(){
+    fun testUpdateRound_Success() {
 
         val id = postNewRoundValid(getValidRoundDto())
         val dto2 = RoundDto(
-                        PlayerResultDto("1","player1", 4),
-                        PlayerResultDto("2","player3", 2),
-                        QuizResultDto("1", "updated", mutableListOf("a", "b", "c", "d"), 1),
-                "player3",id.toString())
+                PlayerResultDto("1", "player1", 4),
+                PlayerResultDto("2", "player3", 2),
+                "player3", id.toString())
 
 
         RestAssured.given()
@@ -169,12 +167,11 @@ class RoundControllerTest : ControllerTestBase(){
     }
 
     @Test
-    fun testUpdateWinnerName(){
+    fun testUpdateWinnerName() {
         // Arrange
         val dto = RoundDto(
-                PlayerResultDto("1","player1", 4),
-                PlayerResultDto("2","player2", 2),
-                QuizResultDto("1", "question", mutableListOf("a", "b", "c", "d"), 1),
+                PlayerResultDto("1", "player1", 4),
+                PlayerResultDto("2", "player2", 2),
                 "player1")
         val id = postNewRoundValid(dto)
         val newWinnerName = "player2"
@@ -214,7 +211,7 @@ class RoundControllerTest : ControllerTestBase(){
         val dtoResponse = RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .pathParam("id",id)
+                .pathParam("id", id)
                 .get("/{id}")
                 .then()
                 .statusCode(200)

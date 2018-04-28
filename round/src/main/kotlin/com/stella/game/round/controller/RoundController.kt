@@ -20,12 +20,12 @@ import javax.validation.ConstraintViolationException
 )
 @RestController
 @Validated
-class RoundController{
+class RoundController {
     @Autowired
     private lateinit var crud: RoundRepository
 
     @RabbitListener(queues = arrayOf("#{queue.name}"))
-    fun createRoundRabbit(roundDto: RoundDto){
+    fun createRoundRabbit(roundDto: RoundDto) {
         registerRound(roundDto)
     }
 
@@ -59,7 +59,7 @@ class RoundController{
     fun getRound(
             @ApiParam(ID_PARAM)
             @PathVariable("id") pathId: Long
-    ) : ResponseEntity<RoundDto> {
+    ): ResponseEntity<RoundDto> {
         val dto = crud.findOne(pathId) ?: return ResponseEntity.status(404).build()
         return ResponseEntity.ok(RoundConverter.transform(dto))
     }
@@ -73,7 +73,7 @@ class RoundController{
             username: String?
     ): ResponseEntity<List<RoundDto>> {
 
-        when(username.isNullOrBlank()){
+        when (username.isNullOrBlank()) {
             true ->
                 return ResponseEntity.ok(RoundConverter.transform(crud.findAll()) as List<RoundDto>)
             false ->
@@ -91,24 +91,23 @@ class RoundController{
     fun createRound(
             @ApiParam("Round model")
             @RequestBody resultDto: RoundDto
-    ) : ResponseEntity<Long> {
+    ): ResponseEntity<Long> {
 
-        if (!validDto(resultDto)){
+        if (!validDto(resultDto)) {
             return ResponseEntity.status(400).build()
         }
 
         try {
             val id = registerRound(resultDto)
             return ResponseEntity.status(201).body(id)
-        }
-        catch (e: ConstraintViolationException){
+        } catch (e: ConstraintViolationException) {
             return ResponseEntity.status(409).build()
-        }
-        catch (e: Exception){
+        } catch (e: Exception) {
             return ResponseEntity.status(400).build()
         }
 
     }
+
     @ApiOperation("Modify the winner name of given round id")
     @ApiResponses(
             ApiResponse(code = 404, message = "Round not found"),
@@ -123,7 +122,7 @@ class RoundController{
             @ApiParam("Winner name")
             @RequestBody
             winnerName: String
-    ) : ResponseEntity<Void> {
+    ): ResponseEntity<Void> {
 
         // not exist
         if (!crud.exists(id)) {
@@ -131,7 +130,7 @@ class RoundController{
         }
 
         // not valid winnerName
-        if(!crud.changeWinnerName(id,winnerName)){
+        if (!crud.changeWinnerName(id, winnerName)) {
             return ResponseEntity.status(400).build()
         } else {
             return ResponseEntity.status(204).build()
@@ -163,14 +162,14 @@ class RoundController{
             return ResponseEntity.status(404).build()
         }
 
-        if(!updateRound(dto))
+        if (!updateRound(dto))
             return ResponseEntity.status(400).build()
 
         return ResponseEntity.status(204).build()
     }
 
 
-    fun registerRound(resultDto: RoundDto): Long{
+    fun registerRound(resultDto: RoundDto): Long {
         return crud.createRound(
                 resultDto.player1!!.id!!.toLong(),
                 resultDto.player2!!.id!!.toLong(),
@@ -178,56 +177,43 @@ class RoundController{
                 resultDto.player2!!.username!!,
                 resultDto.player1!!.correctAnswers!!,
                 resultDto.player2!!.correctAnswers!!,
-                resultDto.winnerName!!,
-                resultDto.quiz!!.id!!.toLong(),
-                resultDto.quiz!!.question!!,
-                resultDto.quiz!!.answers!!,
-                resultDto.quiz!!.correctAnswer!!
-                )
+                resultDto.winnerName!!
+        )
 
     }
-    fun updateRound(resultDto: RoundDto):Boolean{
+
+    fun updateRound(resultDto: RoundDto): Boolean {
         return crud.update(
                 resultDto.player1!!.username!!,
                 resultDto.player2!!.username!!,
                 resultDto.player1!!.correctAnswers!!,
                 resultDto.player2!!.correctAnswers!!,
                 resultDto.winnerName!!,
-                resultDto.id!!.toLong(),
-                resultDto.quiz!!.id!!.toLong(),
-                resultDto.quiz!!.question!!,
-                resultDto.quiz!!.answers!!,
-                resultDto.quiz!!.correctAnswer!!
+                resultDto.id!!.toLong()
         )
     }
 
-    fun validDto(resultDto: RoundDto): Boolean{
+    fun validDto(resultDto: RoundDto): Boolean {
         try {
             resultDto.player1!!.id!!.toLong()
             resultDto.player2!!.id!!.toLong()
-        }
-        catch (e: Exception){
+        } catch (e: Exception) {
             return false
         }
-
         if (
-                resultDto.player1?.username!=null &&
-                resultDto.player2?.username!=null &&
-                resultDto.player1?.correctAnswers!=null &&
-                resultDto.player2?.correctAnswers!=null &&
-                resultDto.quiz?.id != null &&
-                resultDto.quiz?.question != null &&
-                resultDto.quiz?.answers != null &&
-                resultDto.quiz?.correctAnswer != null &&
-                resultDto.winnerName!=null &&
-                resultDto.id==null
+                resultDto.player1?.username != null &&
+                resultDto.player2?.username != null &&
+                resultDto.player1?.correctAnswers != null &&
+                resultDto.player2?.correctAnswers != null &&
+                resultDto.winnerName != null &&
+                resultDto.id == null
 
-        )
-                { return true }
+        ) {
+            return true
+        }
 
         return false
     }
 }
-
 
 const val ID_PARAM = "The numeric id of the round"

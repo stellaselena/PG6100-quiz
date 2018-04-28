@@ -20,11 +20,7 @@ class RoundConverterTest {
                 2,
                 "u2",
                 null,
-                null,
-                1,
-                "question",
-                mutableListOf("a", "b", "c", "d"),
-                1)
+                null)
         val round2 = Round(
                 1,
                 2,
@@ -34,11 +30,7 @@ class RoundConverterTest {
                 2,
                 "u2",
                 null,
-                null,
-                1,
-                "question",
-                mutableListOf("a", "b", "c", "d"),
-                1)
+                null)
 
 
         //Act

@@ -23,22 +23,14 @@ interface RoundRepositoryCustom {
             player2Username: String,
             player1CorrectAnswers: Int,
             player2CorrectAnswers: Int,
-            winnerName: String,
-            quizId: Long,
-            quizQuestion : String,
-            quizAnswers : MutableList<String>,
-            quizCorrectAnswer : Int) : Long
+            winnerName: String) : Long
     fun update(
             player1Username: String,
             player2Username: String,
             player1CorrectAnswers: Int,
             player2CorrectAnswers: Int,
             winnerName: String,
-            id: Long,
-            quizId: Long,
-            quizQuestion : String,
-            quizAnswers : MutableList<String>,
-            quizCorrectAnswer : Int) : Boolean
+            id: Long) : Boolean
 
     fun changeWinnerName(id: Long, newWinnerName: String): Boolean
 
@@ -49,15 +41,10 @@ interface RoundRepositoryCustom {
 
 open class RoundRepositoryImpl : RoundRepositoryCustom {
 
-    //todo overwrite methods with quiz
-
     @PersistenceContext
     private lateinit var em: EntityManager
 
-    override fun createRound(player1Id: Long, player2Id: Long, player1Username: String, player2Username: String, player1CorrectAnswers: Int, player2CorrectAnswers: Int, winnerName: String, quizId: Long,
-                             quizQuestion : String,
-                             quizAnswers : MutableList<String>,
-                             quizCorrectAnswer : Int): Long {
+    override fun createRound(player1Id: Long, player2Id: Long, player1Username: String, player2Username: String, player1CorrectAnswers: Int, player2CorrectAnswers: Int, winnerName: String): Long {
         var id = -1L
 
         val round = Round(
@@ -69,11 +56,7 @@ open class RoundRepositoryImpl : RoundRepositoryCustom {
                 player2CorrectAnswers,
                 winnerName,
                 ZonedDateTime.now(),
-            null,
-                quizId,
-                quizQuestion,
-                quizAnswers,
-                quizCorrectAnswer
+            null
         )
         em.persist(round)
 
@@ -82,10 +65,7 @@ open class RoundRepositoryImpl : RoundRepositoryCustom {
         return id
     }
 
-    override fun update(player1Username: String, player2Username: String, player1CorrectAnswers: Int, player2CorrectAnswers: Int, winnerName: String, id: Long, quizId: Long,
-                        quizQuestion : String,
-                        quizAnswers : MutableList<String>,
-                        quizCorrectAnswer : Int): Boolean {
+    override fun update(player1Username: String, player2Username: String, player1CorrectAnswers: Int, player2CorrectAnswers: Int, winnerName: String, id: Long): Boolean {
         val round = em.find(Round::class.java, id) ?: return false
         if (winnerName != player1Username && winnerName != player2Username) return false
 
@@ -101,10 +81,7 @@ open class RoundRepositoryImpl : RoundRepositoryCustom {
         round.player1CorrectAnswers = player1CorrectAnswers
         round.player2CorrectAnswers = player2CorrectAnswers
         round.winnerName = winnerName
-        round.quizId = quizId
-        round.quizQuestion = quizQuestion
-        round.quizAnswers = quizAnswers
-        round.quizCorrectAnswer = quizCorrectAnswer
+
         return true
     }
 

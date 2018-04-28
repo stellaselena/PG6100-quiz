@@ -14,9 +14,6 @@ data class RoundDto(
         @ApiModelProperty("Player2 info")
         var player2: PlayerResultDto? = null,
 
-        @ApiModelProperty("Chosen quiz")
-        var quiz: QuizResultDto? = null,
-
         @ApiModelProperty("Winner name of the round")
         var winnerName: String?= null,
 
@@ -37,19 +34,5 @@ data class PlayerResultDto(
         var correctAnswers: Int?=null
 ): Serializable
 
-data class QuizResultDto(
-        @ApiModelProperty("The id of the quiz")
-        var id: String? = null,
-
-        @ApiModelProperty("The question of the quiz")
-        var question: String? = null,
-
-        @ApiModelProperty("The answers to the quiz")
-        var answers: MutableList<String>? = null,
-
-        @ApiModelProperty("The correct answer to the quiz")
-        var correctAnswer: Int? = null
-
-) : Serializable
 
 

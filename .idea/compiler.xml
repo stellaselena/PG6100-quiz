@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="category" />
         <module name="eureka" />
+        <module name="gamelogic" />
         <module name="gateway" />
         <module name="player" />
         <module name="quiz" />
@@ -20,6 +21,7 @@
       <module name="category" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="game" target="1.8" />
+      <module name="gamelogic" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="player" target="1.8" />
       <module name="quiz" target="1.8" />

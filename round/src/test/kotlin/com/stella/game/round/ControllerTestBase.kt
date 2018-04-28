@@ -1,7 +1,6 @@
 package com.stella.game.round
 
 import com.stella.game.schema.PlayerResultDto
-import com.stella.game.schema.QuizResultDto
 import com.stella.game.schema.RoundDto
 import io.restassured.RestAssured
 import io.restassured.http.ContentType
@@ -63,8 +62,7 @@ abstract class ControllerTestBase{
     fun getValidRoundDto():RoundDto {
         val player1Winner = PlayerResultDto("1","player1", 4)
         val player2  = PlayerResultDto("2","player2", 2)
-        val quiz = QuizResultDto("1", "question", mutableListOf("a", "b", "c", "d"), 1)
-        return RoundDto(player1Winner, player2, quiz, player1Winner.username)
+        return RoundDto(player1Winner, player2, player1Winner.username)
     }
 
     fun postNewRoundValid(dto: RoundDto) : Long{

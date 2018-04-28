@@ -85,6 +85,20 @@ services:
         - eureka
         - postgres-round
         - rabbitmq
+
+  gamelogic-server:
+      build:
+        context: ./gamelogic
+        dockerfile: Dockerfile
+      ports:
+        - "9004:8080"
+      depends_on:
+        - eureka
+        - rabbitmq
+        - redis
+        - player-server
+        - round-server
+        - quiz-server
   gateway:
       build:
         context: ./gateway
@@ -95,7 +109,7 @@ services:
         - redis
         - eureka
         - postgres-user
-#        - gamelogic-server
+        - gamelogic-server
         - player-server
         - quiz-server
         - round-server

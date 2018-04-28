@@ -1,0 +1,11 @@
+server:
+  port: 9086
+quizServerName: http://localhost:8083
+playerServerName: http://localhost:8081
+roundServerName: http://localhost:8085
+
+spring:
+  session:
+    # during testing for this service in isolation,
+    # do not use Redis
+    store-type: hash_map
