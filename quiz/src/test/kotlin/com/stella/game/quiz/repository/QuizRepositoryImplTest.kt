@@ -83,21 +83,21 @@ class EntityRepositoryImplTest {
 
     }
 
-    @Test
-    fun testFindRandomQuiz(){
-        val quiz = createQuiz()
-        val quiz2 = createQuiz()
-        val quizzes = repo.findAll()
-
-        val randomQuiz = repo.findARandomQuiz(quizzes)
-        var checkRandom = false
-        if(randomQuiz.id == 1L || randomQuiz.id == 2L){
-            checkRandom = true
-        }
-        Assert.assertTrue(checkRandom)
-
-
-    }
+//    @Test
+//    fun testFindRandomQuiz(){
+//        val quiz = createQuiz()
+//        val quiz2 = createQuiz()
+//        val quizzes = repo.findAll()
+//
+//        val randomQuiz = repo.findARandomQuiz(quizzes)
+//        var checkRandom = false
+//        if(randomQuiz.id == 1L || randomQuiz.id == 2L){
+//            checkRandom = true
+//        }
+//        Assert.assertTrue(checkRandom)
+//
+//
+//    }
 
 
 }

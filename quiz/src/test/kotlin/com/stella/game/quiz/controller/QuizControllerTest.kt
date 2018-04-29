@@ -5,6 +5,7 @@ import com.stella.game.schema.QuizDto
 import com.stella.game.schema.SubcategoryDto
 import io.restassured.RestAssured
 import io.restassured.http.ContentType
+import junit.framework.Assert.assertEquals
 import org.hamcrest.CoreMatchers
 import org.junit.Assert
 import org.junit.Before
@@ -179,13 +180,14 @@ class QuizRepositoryImplTest : WiremockTestBase() {
 
         val foundQuizzes = RestAssured.given().contentType(ContentType.JSON)
                 .get("/randomQuizzes")
-                .then()
-                .extract().asString()
 
         val foundQuizzesWithSizeSpecified = RestAssured.given().contentType(ContentType.JSON)
                 .get("/randomQuizzes?n=3")
                 .then()
                 .extract().asString()
+        RestAssured.given().contentType(ContentType.JSON).get("/randomQuizzes").then().body("size()", CoreMatchers.equalTo(2))
+
+        assertEquals(200, foundQuizzes.statusCode)
     }
 
 

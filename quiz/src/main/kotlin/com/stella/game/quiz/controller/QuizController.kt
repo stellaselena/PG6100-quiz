@@ -258,7 +258,7 @@ class QuizController {
     }
 
     @ApiOperation("Get random quizzes")
-    @GetMapping(path = arrayOf("/randomQuizzes"))
+    @GetMapping(path = arrayOf("/randomQuizzes"), consumes = arrayOf(MediaType.APPLICATION_JSON_UTF8_VALUE))
     @ApiResponses(
             ApiResponse(code = 400, message = "Could not gather enough random quizzes")
     )

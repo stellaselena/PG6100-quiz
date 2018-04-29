@@ -50,7 +50,7 @@ class GameLogicController {
             ApiResponse(code = 404, message = "No opponent found")
     )
     @GetMapping(path = arrayOf("/opponent"), produces = arrayOf(MediaType.APPLICATION_JSON_UTF8_VALUE))
-    fun findEnemy(authentication: Authentication): ResponseEntity<PlayerSearchDto>? {
+    fun findOpponent(authentication: Authentication): ResponseEntity<PlayerSearchDto>? {
 
         // 1 make request to player module.
         val response: ResponseEntity<Array<PlayerDto>> = try {
@@ -61,7 +61,7 @@ class GameLogicController {
             return ResponseEntity.status(e.statusCode.value()).build()
         }
 
-        // 3 get list. If list is empty return bad request
+        // 2 get list. If list is empty return bad request
         val players = response.body.asList()
         if (players.isEmpty()) {
             return ResponseEntity.status(404).build()
@@ -72,7 +72,7 @@ class GameLogicController {
         val playersFiltered = excludeFromListByUsername(players, callerUsername)
 
 
-        // 4 get random from list
+        // 3 get random from list
         if (playersFiltered.isNotEmpty()) {
             return ResponseEntity.ok(PlayerSearchConverter.transform(playersFiltered[Random().nextInt(playersFiltered.size)]))
         } else {
@@ -87,7 +87,7 @@ class GameLogicController {
             ApiResponse(code = 404, message = "Opponent(s) not found"),
             ApiResponse(code = 400, message = "Given payload is invalid, check request body")
     )
-    fun startFight(
+    fun startRound(
             authentication: Authentication,
             @ApiParam("Model represent ids of users for the given round")
             @RequestBody playerSearchDto: PlayerSearchDto
@@ -151,9 +151,10 @@ class GameLogicController {
         val quizResultGameLog = gameService.startRound(p1, p2, questions)
 
         val roundResult = getRound(p1, p2, quizResultGameLog.winner!!)
-        try{
+        try {
             amqpService.sendRoundCreated(roundResult)
-        } catch (e: Exception){}
+        } catch (e: Exception) {
+        }
 
         return ResponseEntity.ok(quizResultGameLog)
     }
