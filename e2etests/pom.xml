@@ -49,17 +49,17 @@
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>no.ern.game</groupId>
+            <groupId>com.stella.game</groupId>
             <artifactId>gateway</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>no.ern.game</groupId>
+            <groupId>com.stella.game</groupId>
             <artifactId>gamelogic</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>no.ern.game</groupId>
+            <groupId>com.stella.game</groupId>
             <artifactId>eureka</artifactId>
             <version>${project.version}</version>
         </dependency>
