@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="category" />
+        <module name="e2etests" />
         <module name="eureka" />
         <module name="gamelogic" />
         <module name="gateway" />
@@ -19,6 +20,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="category" target="1.8" />
+      <module name="e2etests" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="game" target="1.8" />
       <module name="gamelogic" target="1.8" />

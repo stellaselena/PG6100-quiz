@@ -18,6 +18,7 @@
         <module>gateway</module>
         <module>round</module>
         <module>gamelogic</module>
+        <module>e2etests</module>
     </modules>
 
     <properties>

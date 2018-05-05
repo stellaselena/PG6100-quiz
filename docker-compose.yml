@@ -28,15 +28,15 @@ services:
       build:
         context: ./eureka
         dockerfile: Dockerfile
-      ports:
-        - "8761:8761"
+#      ports:
+#        - "8761:8761"
 
   subcategory-server:
     build:
       context: ./subcategory
       dockerfile: Dockerfile
-    ports:
-      - "8082:8080"
+#    ports:
+#      - "8082:8080"
     depends_on:
       - eureka
       - postgres-subcategory
@@ -46,8 +46,8 @@ services:
     build:
       context: ./category
       dockerfile: Dockerfile
-    ports:
-      - "8084:8080"
+#    ports:
+#      - "8084:8080"
     depends_on:
       - eureka
       - postgres-category
@@ -56,8 +56,8 @@ services:
       build:
         context: ./quiz
         dockerfile: Dockerfile
-      ports:
-        - "8083:8080"
+#      ports:
+#        - "8083:8080"
       depends_on:
         - eureka
         - postgres-quiz
@@ -66,8 +66,8 @@ services:
       build:
         context: ./player
         dockerfile: Dockerfile
-      ports:
-        - "8081:8080"
+#      ports:
+#        - "8081:8080"
       depends_on:
         - eureka
         - postgres-quiz
@@ -79,8 +79,8 @@ services:
       build:
         context: ./round
         dockerfile: Dockerfile
-       ports:
-         - "8085:8080"
+#      ports:
+#        - "8085:8080"
       depends_on:
         - eureka
         - postgres-round
@@ -90,8 +90,8 @@ services:
       build:
         context: ./gamelogic
         dockerfile: Dockerfile
-      ports:
-        - "8086:8080"
+#      ports:
+#        - "8086:8080"
       depends_on:
         - eureka
         - rabbitmq
