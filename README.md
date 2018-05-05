@@ -1,4 +1,5 @@
-# Quiz game application
+# Quiz game application [![Build Status](https://travis-ci.org/stellaselena/quizExam.svg?branch=master)](https://travis-ci.org/stellaselena/quizExam)
+
 [Repository](https://github.com/stellaselena/quizExam)  
 [Postman collection](https://www.getpostman.com/collections/0c72dac72387d2959600)  
 
