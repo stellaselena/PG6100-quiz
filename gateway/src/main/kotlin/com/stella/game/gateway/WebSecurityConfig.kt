@@ -34,7 +34,7 @@ class WebSecurityConfig(
                 //
                 .authorizeRequests()
                 .antMatchers("/swagger-ui.html").permitAll()
-//                .antMatchers("/gamelogic-server/**").authenticated()
+                .antMatchers("/gamelogic-server/**").authenticated()
                 .antMatchers("/player-server/**").authenticated()
                 .antMatchers("/quiz-server/**").authenticated()
                 .antMatchers("/category-server/**").authenticated()
@@ -45,7 +45,7 @@ class WebSecurityConfig(
                 .anyRequest().denyAll()
                 .and()
                 .csrf().disable()
-//                .csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+                .csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
     }
 
 
