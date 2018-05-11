@@ -29,6 +29,10 @@ zuul:
       path: /round-server/**
       url: http://round-server:8080/
       sensitive-headers:
+    gamelogic-server:
+      path: /gamelogic-server/**
+      url: http://gamelogic-server:8080/
+      sensitive-headers:
 #    user-service:
 #      path: /user-service/**
 #      url: http://user-service:8080/
