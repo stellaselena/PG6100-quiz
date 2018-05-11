@@ -11,6 +11,8 @@ zuul:
       path: /categories/**
     round:
       path: /rounds/**
+    gamelogic:
+      path: /play/**
 
 spring:
   application:
