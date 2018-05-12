@@ -11,7 +11,7 @@ class PlayerConverter {
             return PlayerDto(
                     username = entity.username,
                     id = entity.id.toString(),
-                    quizzes = entity.quizzes
+                    correctAnswers = entity.correctAnswers
             )
         }
 

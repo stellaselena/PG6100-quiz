@@ -26,14 +26,13 @@ class EntityRepositoryImplTest {
         val player = getValidPlayers()[0]
 
         val savedId = repo.createPlayer(
-                player.username,
-                player.quizzes
+                player.username
         )
 
         Assert.assertEquals(1, repo.count())
 
         val foundPlayer = repo.findOne(savedId)
-        foundPlayer.quizzes = player.quizzes
+        foundPlayer.username = player.username
     }
 
 
@@ -45,40 +44,12 @@ class EntityRepositoryImplTest {
 
         try {
             repo.createPlayer(
-                    player.username,
-                    player.quizzes
+                    player.username
             )
             Assert.fail()
         } catch (e: Exception) {
 
         }
-    }
-
-    @Test
-    fun testAddQuiz_Valid() {
-        val player = getValidPlayers()[0]
-        val savedId = createPlayer(player)
-        val expectedQuizCount = player.quizzes.count() + 1
-
-        Assert.assertEquals(repo.count(), 1)
-
-        val wasSuccessful = repo.addQuiz(savedId, 300L)
-        Assert.assertTrue(wasSuccessful)
-
-        val foundPlayer = repo.findOne(savedId)
-        Assert.assertEquals(expectedQuizCount, foundPlayer.quizzes.count())
-    }
-
-    @Test
-    fun testAddQuiz_Invalid() {
-        val player = getValidPlayers()[0]
-        player.quizzes = mutableSetOf(1L, 2L)
-
-        val savedId = createPlayer(player)
-        Assert.assertNotEquals(-1, savedId)
-
-        val wasSuccessful = repo.addQuiz(savedId, 1L)
-        Assert.assertFalse(wasSuccessful)
     }
 
     @Test
@@ -214,17 +185,17 @@ class EntityRepositoryImplTest {
         return listOf(
                 Player(
                         "Stella",
-                        mutableSetOf(1L, 3L, 2L),
+                        0,
                         44
                 ),
                 Player(
                         "Athena",
-                        mutableSetOf(10L, 25L, 17L),
+                        0,
                         46
                 ),
                 Player(
                         "Stefan",
-                        mutableSetOf(11L, 27L, 19L),
+                        0,
                         96
                 )
         )
@@ -233,8 +204,7 @@ class EntityRepositoryImplTest {
 
     fun createPlayer(player: Player): Long {
         val savedId = repo.createPlayer(
-                player.username,
-                player.quizzes
+                player.username
         )
 
         return savedId
@@ -244,7 +214,7 @@ class EntityRepositoryImplTest {
     fun updatePlayer(player: Player, id: Long): Boolean {
         return repo.updatePlayer(
                 username = player.username,
-                quizzes = player.quizzes,
+                correctAnswers = 1,
                 id = id
         )
     }

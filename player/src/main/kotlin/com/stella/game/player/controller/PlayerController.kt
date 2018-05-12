@@ -43,8 +43,7 @@ class PlayerController {
 
         try {
             repo.createPlayer(
-                    username = playerDto.username!!.toLowerCase(),
-                    quizzes = mutableSetOf()
+                    username = playerDto.username!!.toLowerCase()
             )
         } catch (e: Exception) { }
     }
@@ -77,54 +76,13 @@ class PlayerController {
 
         try {
             val savedId = repo.createPlayer(
-                    username = playerDto.username!!,
-                    quizzes = mutableSetOf()
+                    username = playerDto.username!!
             )
             return ResponseEntity.status(201).body(savedId)
 
         } catch (e: java.lang.Exception) {
             return ResponseEntity.status(400).build()
         }
-    }
-
-    @ApiOperation("Adds quizzes to player")
-    @PostMapping(path = arrayOf("/{id}/quizzes"), consumes = arrayOf(MediaType.APPLICATION_JSON_UTF8_VALUE))
-
-    @ApiResponses(
-            ApiResponse(code = 200, message = "Quiz was successfully added to Player"),
-            ApiResponse(code = 400, message = "Quiz-id sent in body is not correct"),
-            ApiResponse(code = 404, message = "Could not find id or quiz with specified id")
-
-    )
-    fun addQuizToPlayer(
-            @PathVariable("id")
-            id: Long,
-            @RequestBody
-            quizDto: QuizDto): ResponseEntity<Void> {
-
-
-        if(!repo.exists(id)) {
-            return ResponseEntity.status(404).build()
-        }
-
-        // check if quiz id exists
-        val quizURL = "${quizHost}/quizzes/${quizDto.id}"
-        val response: ResponseEntity<QuizDto> = try {
-            rest.getForEntity(quizURL, QuizDto::class.java)
-        } catch (e: HttpClientErrorException) {
-            return ResponseEntity.status(404).build()
-        }
-
-        if (quizDto.id == null || response.statusCodeValue != 200) {
-            return ResponseEntity.status(400).build()
-        }
-
-        if (repo.addQuiz(id, quizDto.id!!.toLong())) {
-            return ResponseEntity.status(200).build()
-        } else {
-            return ResponseEntity.status(400).build()
-        }
-
     }
 
     @ApiOperation("Get player specified by id")
@@ -203,7 +161,7 @@ class PlayerController {
         try {
             val successful = repo.updatePlayer(
                     playerDto.username!!,
-                    playerDto.quizzes!!.toMutableSet(),
+                    playerDto.correctAnswers!!,
                     playerDto.id!!.toLong()
             )
             if (!successful) {

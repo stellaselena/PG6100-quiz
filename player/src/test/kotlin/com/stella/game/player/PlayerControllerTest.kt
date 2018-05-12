@@ -25,8 +25,15 @@ class PlayerControllerTest : TestBase() {
                 .then()
                 .statusCode(201)
                 .extract().`as`(Long::class.java)
+        val playerDto2 = getValidPlayerDtos()[1]
+        val savedId2 = RestAssured.given().contentType(ContentType.JSON)
+                .body(playerDto2)
+                .post()
+                .then()
+                .statusCode(201)
+                .extract().`as`(Long::class.java)
 
-        RestAssured.given().get().then().statusCode(200).body("size()", CoreMatchers.equalTo(1))
+        RestAssured.given().get().then().statusCode(200).body("size()", CoreMatchers.equalTo(2))
 
         val foundPlayer1 = RestAssured.given().contentType(ContentType.JSON)
                 .pathParam("id", savedId)
@@ -117,6 +124,7 @@ class PlayerControllerTest : TestBase() {
                 .then()
                 .statusCode(200)
                 .body("username", CoreMatchers.equalTo(playerDto2.username))
+                .body("correctAnswers", CoreMatchers.equalTo(0))
 
         RestAssured.given().get().then().statusCode(200).body("size()", CoreMatchers.equalTo(1))
     }
@@ -185,18 +193,18 @@ class PlayerControllerTest : TestBase() {
                 PlayerDto(
                         "stella",
                         null,
-                        listOf(1L, 2L, 3L)
+                        0
 
                         ),
                 PlayerDto(
                         "stefan",
                         null,
-                        listOf(1L, 2L, 3L)
+                        0
                 ),
                 PlayerDto(
                         "athena",
                         null,
-                        listOf(1L, 2L, 3L)
+                        0
                 )
         )
     }

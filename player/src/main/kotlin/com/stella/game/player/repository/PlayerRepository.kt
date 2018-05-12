@@ -19,18 +19,16 @@ interface PlayerRepository : CrudRepository<Player, Long>, PlayerRepositoryCusto
 @Transactional
 interface PlayerRepositoryCustom {
     fun createPlayer(
-            username: String,
-            quizzes: MutableSet<Long>
+            username: String
     ): Long
 
     fun updatePlayer(
             username: String,
-            quizzes: MutableSet<Long>,
+            correctAnswers: Int,
             id: Long): Boolean
 
     fun updateUsername(username: String, id: Long) : Boolean
 
-    fun addQuiz(id: Long, quizId: Long): Boolean
 }
 
 open class PlayerRepositoryImpl : PlayerRepositoryCustom {
@@ -39,11 +37,11 @@ open class PlayerRepositoryImpl : PlayerRepositoryCustom {
     @PersistenceContext
     private lateinit var em: EntityManager
 
-    override fun createPlayer(username: String, quizzes: MutableSet<Long>): Long {
+    override fun createPlayer(username: String): Long {
         var id: Long = -1
         val playerEntity = Player(
                 username,
-                quizzes
+                correctAnswers = 0
         )
 
 
@@ -56,7 +54,7 @@ open class PlayerRepositoryImpl : PlayerRepositoryCustom {
         return id
     }
 
-    override fun updatePlayer(username: String, quizzes: MutableSet<Long>, id: Long): Boolean {
+    override fun updatePlayer(username: String, correctAnswers: Int, id: Long): Boolean {
         val player = em.find(Player::class.java, id) ?: return false
 
         if (username.isNullOrEmpty() || username.length > 50) {
@@ -64,7 +62,7 @@ open class PlayerRepositoryImpl : PlayerRepositoryCustom {
         }
 
         player.username = username
-        player.quizzes = quizzes
+        player.correctAnswers = correctAnswers
 
         return true
     }
@@ -81,14 +79,4 @@ open class PlayerRepositoryImpl : PlayerRepositoryCustom {
         return true
     }
 
-    override fun addQuiz(id: Long, quizId: Long): Boolean {
-        var added = false
-        try {
-            val player = em.find(Player::class.java, id)
-            added = player.quizzes.add(quizId)
-        } catch (e: Exception) {
-
-        }
-        return added
-    }
 }

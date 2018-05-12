@@ -89,7 +89,7 @@ class GameLogicController {
     )
     fun startRound(
             authentication: Authentication,
-            @ApiParam("Model represent ids of users for the given round")
+            @ApiParam("Model represents ids of users for the given round")
             @RequestBody playerSearchDto: PlayerSearchDto
     ): ResponseEntity<QuizResultLogDto> {
 
@@ -112,6 +112,7 @@ class GameLogicController {
                 return ResponseEntity.status(400).build()
             } else {
                 player1 = responsePlayer1.body.toList().first()
+                println("fetched player one")
             }
 
             val responsePlayer2: ResponseEntity<PlayerDto> = restTemplate.getForEntity(urlPlayer2, PlayerDto::class.java)
@@ -130,30 +131,40 @@ class GameLogicController {
             if (callerUsername.toLowerCase() == player2.username!!.toLowerCase()) {
                 return ResponseEntity.status(400).build()
             }
+            println("fetched player two")
+
 
         } catch (e: HttpClientErrorException) {
             return ResponseEntity.status(e.rawStatusCode).build()
         }
-        var quizzes: List<QuizDto> = listOf()
+        var quizzes: List<QuizDto> = mutableListOf()
 
         /**fetch quizzes**/
         try {
-            val quizUrl = "$quizPath/quizzes/randomQuizzes"
+            val quizUrl = "$quizPath/quizzes/quizzes"
             val responseQuiz = restTemplate.getForEntity(quizUrl, Array<QuizDto>::class.java)
             quizzes = responseQuiz.body.toList()
         } catch (e: HttpClientErrorException) {
             return ResponseEntity.status(e.rawStatusCode).build()
         }
+        println("fetched quizzes")
+
         /**begin round**/
         val p1: Participant = PlayerQuizRoundConverter.transform(player1)
         val p2: Participant = PlayerQuizRoundConverter.transform(player2)
         val questions: List<Question> = QuizForRoundConverter.transform(quizzes)
+        println("starting a round with p1 " + p1.username + " and p2 " + p2.username + "with " + questions.count() + " quizzes")
+
         val quizResultGameLog = gameService.startRound(p1, p2, questions)
 
         val roundResult = getRound(p1, p2, quizResultGameLog.winner!!)
         try {
             amqpService.sendRoundCreated(roundResult)
+            println("round created")
+
         } catch (e: Exception) {
+            println("something went wrong while creating a round")
+
         }
 
         return ResponseEntity.ok(quizResultGameLog)

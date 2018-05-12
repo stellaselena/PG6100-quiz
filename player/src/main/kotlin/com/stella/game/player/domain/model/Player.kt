@@ -2,6 +2,7 @@ package com.stella.game.player.domain.model
 
 import org.hibernate.validator.constraints.NotBlank
 import javax.persistence.*
+import javax.validation.constraints.NotNull
 
 import javax.validation.constraints.Size
 
@@ -13,8 +14,8 @@ data class Player(
         @get:Column(unique = true)
         var username: String,
 
-        @get:ElementCollection
-        var quizzes: MutableSet<Long> = mutableSetOf(),
+        @get:NotNull
+        var correctAnswers: Int? = null,
 
         @get:Id
         @get: GeneratedValue

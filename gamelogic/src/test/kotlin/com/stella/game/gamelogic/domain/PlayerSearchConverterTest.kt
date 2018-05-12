@@ -9,7 +9,6 @@ class PlayerSearchConverterTest{
     val playerDto = PlayerDto(
             "username1",
             "1",
-            null,
             1)
 
     @Test

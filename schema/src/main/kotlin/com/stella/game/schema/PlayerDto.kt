@@ -13,9 +13,6 @@ data class PlayerDto(
         @ApiModelProperty("The id of the player")
         var id: String? = null,
 
-        @ApiModelProperty("The quizzes the player has created")
-        var quizzes: Collection<Long>? = null,
-
         @ApiModelProperty("Correct answers")
         var correctAnswers : Int? = null
 

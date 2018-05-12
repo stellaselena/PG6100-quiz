@@ -68,7 +68,7 @@ class AuthController(
                 val playerDto = PlayerDto(
                         username,
                         null,
-                        listOf()
+                        0
                 )
                 amqpService.sendPlayer(playerDto)
             } catch (e: Exception) {

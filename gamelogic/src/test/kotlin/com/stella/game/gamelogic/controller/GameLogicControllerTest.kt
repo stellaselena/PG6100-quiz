@@ -174,7 +174,7 @@ class GameLogicControllerTest : ControllerTestBase(){
         //mock 4 quizzes
         wiremockServerQuiz.stubFor(
                 WireMock.get(
-                        WireMock.urlMatching(".*/randomQuizzes"))
+                        WireMock.urlMatching(".*/quizzes"))
                         .willReturn(WireMock.aResponse()
                                 .withHeader("Content-Type", "application/json; charset=utf-8")
                                 .withBody(quizzes))
