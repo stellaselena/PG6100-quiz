@@ -19,7 +19,8 @@ interface PlayerRepository : CrudRepository<Player, Long>, PlayerRepositoryCusto
 @Transactional
 interface PlayerRepositoryCustom {
     fun createPlayer(
-            username: String
+            username: String,
+            correctAnswers: Int
     ): Long
 
     fun updatePlayer(
@@ -37,11 +38,11 @@ open class PlayerRepositoryImpl : PlayerRepositoryCustom {
     @PersistenceContext
     private lateinit var em: EntityManager
 
-    override fun createPlayer(username: String): Long {
+    override fun createPlayer(username: String, correctAnswers : Int): Long {
         var id: Long = -1
         val playerEntity = Player(
                 username,
-                correctAnswers = 0
+                correctAnswers
         )
 
 

@@ -124,7 +124,6 @@ class PlayerControllerTest : TestBase() {
                 .then()
                 .statusCode(200)
                 .body("username", CoreMatchers.equalTo(playerDto2.username))
-                .body("correctAnswers", CoreMatchers.equalTo(0))
 
         RestAssured.given().get().then().statusCode(200).body("size()", CoreMatchers.equalTo(1))
     }

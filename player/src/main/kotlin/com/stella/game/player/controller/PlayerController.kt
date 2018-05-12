@@ -43,7 +43,8 @@ class PlayerController {
 
         try {
             repo.createPlayer(
-                    username = playerDto.username!!.toLowerCase()
+                    username = playerDto.username!!.toLowerCase(),
+                    correctAnswers = playerDto.correctAnswers!!
             )
         } catch (e: Exception) { }
     }
@@ -76,7 +77,8 @@ class PlayerController {
 
         try {
             val savedId = repo.createPlayer(
-                    username = playerDto.username!!
+                    username = playerDto.username!!,
+                    correctAnswers = playerDto.correctAnswers!!
             )
             return ResponseEntity.status(201).body(savedId)
 

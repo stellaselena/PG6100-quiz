@@ -26,7 +26,8 @@ class EntityRepositoryImplTest {
         val player = getValidPlayers()[0]
 
         val savedId = repo.createPlayer(
-                player.username
+                player.username,
+                player.correctAnswers!!
         )
 
         Assert.assertEquals(1, repo.count())
@@ -44,7 +45,8 @@ class EntityRepositoryImplTest {
 
         try {
             repo.createPlayer(
-                    player.username
+                    player.username,
+                    player.correctAnswers!!
             )
             Assert.fail()
         } catch (e: Exception) {
@@ -190,7 +192,7 @@ class EntityRepositoryImplTest {
                 ),
                 Player(
                         "Athena",
-                        0,
+                        1,
                         46
                 ),
                 Player(
@@ -204,7 +206,8 @@ class EntityRepositoryImplTest {
 
     fun createPlayer(player: Player): Long {
         val savedId = repo.createPlayer(
-                player.username
+                player.username,
+                player.correctAnswers!!
         )
 
         return savedId
