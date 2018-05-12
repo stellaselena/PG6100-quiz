@@ -137,11 +137,13 @@ class GameLogicController {
         } catch (e: HttpClientErrorException) {
             return ResponseEntity.status(e.rawStatusCode).build()
         }
+        println("sending request to quiz server")
+
         var quizzes: List<QuizDto> = mutableListOf()
 
         /**fetch quizzes**/
         try {
-            val quizUrl = "$quizPath/quizzes/quizzes"
+            val quizUrl = "$quizPath/quizzes"
             val responseQuiz = restTemplate.getForEntity(quizUrl, Array<QuizDto>::class.java)
             quizzes = responseQuiz.body.toList()
         } catch (e: HttpClientErrorException) {

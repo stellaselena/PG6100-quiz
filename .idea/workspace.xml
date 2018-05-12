@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b79647b-2859-4e9b-b0a4-e1a46c0e6074" name="Default" comment="fix wrong import &amp; config for local start">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt" afterPath="$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt" />
-      <change beforePath="$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/domain/model/Player.kt" afterPath="$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/domain/model/Player.kt" />
-      <change beforePath="$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/repository/PlayerRepository.kt" afterPath="$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/repository/PlayerRepository.kt" />
-      <change beforePath="$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerTest.kt" afterPath="$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerTest.kt" />
-      <change beforePath="$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/repository/PlayerRepositoryImplTest.kt" afterPath="$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/repository/PlayerRepositoryImplTest.kt" />
+      <change beforePath="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt" afterPath="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameLogicController.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameLogicController.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="164" column="32" lean-forward="false" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
+            <state relative-caret-position="412">
+              <caret line="145" column="45" lean-forward="true" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -81,8 +77,8 @@
       <file leaf-file-name="PlayerController.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="43" />
+            <state relative-caret-position="566">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -118,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Player.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/domain/model/Player.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+              <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -240,13 +236,13 @@
         <option value="$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerWiremockTest.kt" />
         <option value="$PROJECT_DIR$/gamelogic/src/test/kotlin/com/stella/game/gamelogic/domain/PlayerSearchConverterTest.kt" />
         <option value="$PROJECT_DIR$/gamelogic/src/test/kotlin/com/stella/game/gamelogic/controller/GameLogicControllerTest.kt" />
-        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt" />
         <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/controller/AuthController.kt" />
         <option value="$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/repository/PlayerRepository.kt" />
         <option value="$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt" />
         <option value="$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/repository/PlayerRepositoryImplTest.kt" />
         <option value="$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerTest.kt" />
         <option value="$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/domain/model/Player.kt" />
+        <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt" />
       </list>
     </option>
   </component>
@@ -974,7 +970,7 @@
       <workItem from="1525537483908" duration="2269000" />
       <workItem from="1525541515581" duration="3675000" />
       <workItem from="1525636562094" duration="5303000" />
-      <workItem from="1525972822236" duration="18761000" />
+      <workItem from="1525972822236" duration="19730000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1524036541862</created>
@@ -1026,7 +1022,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196348000" />
+    <option name="totallyTimeSpent" value="197317000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1049,7 +1045,7 @@
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25633958" sideWeight="0.19512194" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25633958" sideWeight="0.1939314" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34375" sideWeight="0.7563396" order="3" side_tool="false" content_ui="tabs" />
@@ -1060,10 +1056,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45416668" sideWeight="0.49779493" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27395833" sideWeight="0.7232635" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27395833" sideWeight="0.7232635" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.034375" sideWeight="0.6719956" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25633958" sideWeight="0.80487806" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.6719956" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25633958" sideWeight="0.8060686" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.225" sideWeight="0.48511577" order="1" side_tool="false" content_ui="tabs" />
@@ -1498,14 +1494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="164" column="32" lean-forward="false" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/controller/AuthController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -1530,26 +1518,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/repository/PlayerRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/repository/PlayerRepositoryImplTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
           <caret line="210" column="9" lean-forward="false" selection-start-line="210" selection-start-column="9" selection-end-line="210" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/domain/model/Player.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/controller/PlayerController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1562,10 +1550,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/domain/model/Player.kt">
+    <entry file="file://$PROJECT_DIR$/player/src/main/kotlin/com/stella/game/player/repository/PlayerRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        <state relative-caret-position="216">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="145" column="45" lean-forward="true" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
           <folding />
         </state>
       </provider>
