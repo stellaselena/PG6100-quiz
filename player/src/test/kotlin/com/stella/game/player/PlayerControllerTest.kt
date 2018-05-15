@@ -104,7 +104,6 @@ class PlayerControllerTest : TestBase() {
                 .extract()
                 .`as`(Long::class.java)
 
-        // Set id to match id after creating player.
         playerDto1.id = savedId.toString()
         playerDto2.id = savedId.toString()
         RestAssured.given().get().then().statusCode(200).body("size()", CoreMatchers.equalTo(1))

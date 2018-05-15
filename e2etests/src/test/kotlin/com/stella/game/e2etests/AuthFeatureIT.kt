@@ -1,4 +1,4 @@
-package com.stella.game
+package com.stella.game.e2etests
 
 import io.restassured.RestAssured
 import io.restassured.http.ContentType

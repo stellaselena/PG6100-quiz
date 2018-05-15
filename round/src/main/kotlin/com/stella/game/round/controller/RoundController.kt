@@ -49,7 +49,7 @@ class RoundController {
         return ResponseEntity.status(204).build()
     }
 
-    @ApiOperation("Get a single match result specified by id")
+    @ApiOperation("Get a single round result specified by id")
     @ApiResponses(
             ApiResponse(code = 400, message = "Given path param is invalid, can not be parsed to long"),
             ApiResponse(code = 404, message = "Round with given id not found"),
@@ -81,7 +81,7 @@ class RoundController {
         }
     }
 
-    @ApiOperation("Create a match result")
+    @ApiOperation("Create a round result")
     @PostMapping(consumes = arrayOf(MediaType.APPLICATION_JSON_UTF8_VALUE))
     @ApiResponses(
             ApiResponse(code = 201, message = "Round created, return id of new resource"),

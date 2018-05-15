@@ -71,9 +71,8 @@ class GameLogicControllerTest : ControllerTestBase(){
     }
 
     @Test
-    fun fight_TryFightYourself(){
+    fun startRoundWithYourself(){
 
-        // Try to fight yourself
 
         // Arrange
         val invalidPlayerSearchDto = PlayerSearchDto("1", "foo")
@@ -100,7 +99,7 @@ class GameLogicControllerTest : ControllerTestBase(){
     }
 
     @Test
-    fun fight_OnePlayerNotFound() {
+    fun startRoundOnePlayerNotFound() {
 
         // Arrange
         val player1Dto = getPlayerDto("2", "bar", 0)

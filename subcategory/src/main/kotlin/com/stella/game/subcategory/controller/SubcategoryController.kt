@@ -66,7 +66,7 @@ class SubcategoryApi {
         val result = CallGetCategory(dto.category!!).execute()
 
         if (result != 200 || result == 0) {
-            return ResponseEntity.status(400).build()
+            return ResponseEntity.status(404).build()
         }
 
         val id: Long?

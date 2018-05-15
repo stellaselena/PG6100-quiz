@@ -7,7 +7,7 @@ import org.hamcrest.CoreMatchers
 import org.junit.Assert
 import org.junit.Test
 
-class MatchResultControllerTest : TestBase() {
+class CategoryControllerTest : TestBase() {
     @Test
     fun testCleanDB() {
         RestAssured.given().get().then()
@@ -17,7 +17,6 @@ class MatchResultControllerTest : TestBase() {
 
     @Test
     fun testCreateCategory(){
-        // POST /matches
         var category = getCategoryDto()
 
         // valid dto

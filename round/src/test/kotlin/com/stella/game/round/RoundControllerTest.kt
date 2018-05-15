@@ -91,11 +91,11 @@ class RoundControllerTest : ControllerTestBase() {
                 .statusCode(400)
 
 
-        val notExistMatchId = 555
+        val notExistRoundId = 555
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .pathParam("id", notExistMatchId)
+                .pathParam("id", notExistRoundId)
                 .get("{id}")
                 .then()
                 .statusCode(404)
@@ -107,7 +107,6 @@ class RoundControllerTest : ControllerTestBase() {
         val dto = getValidRoundDto()
         val id = postNewRoundValid(dto)
 
-        // DELETE /matches/:id
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
@@ -116,7 +115,6 @@ class RoundControllerTest : ControllerTestBase() {
                 .then()
                 .statusCode(204)
 
-        // DELETE /matches/invalid_input
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
@@ -125,12 +123,11 @@ class RoundControllerTest : ControllerTestBase() {
                 .then()
                 .statusCode(400)
 
-        //DELETE /matchers/555
-        val notExistMatchId = 555
+        val notExistRoundId = 555
         RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .pathParam("id", notExistMatchId)
+                .pathParam("id", notExistRoundId)
                 .delete("{id}")
                 .then()
                 .statusCode(404)

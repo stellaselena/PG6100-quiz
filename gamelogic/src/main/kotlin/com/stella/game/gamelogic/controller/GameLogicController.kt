@@ -146,8 +146,13 @@ class GameLogicController {
             val quizUrl = "$quizPath/quizzes"
             val responseQuiz = restTemplate.getForEntity(quizUrl, Array<QuizDto>::class.java)
             quizzes = responseQuiz.body.toList()
+            if(quizzes.count() <= 1){
+                return ResponseEntity.status(406).build()
+
+            }
         } catch (e: HttpClientErrorException) {
-            return ResponseEntity.status(e.rawStatusCode).build()
+            return ResponseEntity.status(400).build()
+
         }
         println("fetched quizzes")
 
@@ -172,9 +177,6 @@ class GameLogicController {
         return ResponseEntity.ok(quizResultGameLog)
     }
 }
-
-//todo remove quizzes from player entity
-
 
 private fun isPlayersQuizRoundValid(dto: PlayerSearchDto): Boolean {
     try {

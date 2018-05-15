@@ -90,7 +90,7 @@ class RoundRepositoryTest {
     }
 
     @Test
-    fun testCreate3MatchResults_Valid() {
+    fun testCreate3RoundResults_Valid() {
 
         //Act
         val id1 = createRoundValid()
@@ -106,7 +106,7 @@ class RoundRepositoryTest {
 
 
     @Test
-    fun testCreateResultMatch_UsernameNotValid() {
+    fun testCreateRound_UsernameNotValid() {
 
         //Act
         // 1 Blank
@@ -245,11 +245,11 @@ class RoundRepositoryTest {
         val winnerNameUpdated2 = crud.changeWinnerName(123123123123,"123231")
 
         // Assert
-        val matchFromDb = crud.findOne(id)
+        val roundFromDb = crud.findOne(id)
         Assert.assertTrue(winnerNameUpdated)
         Assert.assertFalse(winnerNameUpdated1)
         Assert.assertFalse(winnerNameUpdated2)
-        Assert.assertEquals(newWinner, matchFromDb.winnerName)
+        Assert.assertEquals(newWinner, roundFromDb.winnerName)
     }
 
     @Test
@@ -282,17 +282,17 @@ class RoundRepositoryTest {
                 "u2")
 
         // Act
-        val lastMatchResult = crud.getLastRoundByUserName("u1")
-        val matchResult1 = crud.findOne(id1)
-        val matchResult2 = crud.findOne(id2)
+        val lastRoundResult = crud.getLastRoundByUserName("u1")
+        val roundResult1 = crud.findOne(id1)
+        val roundResult2 = crud.findOne(id2)
 
         // Assert
-        Assert.assertTrue(matchResult1.creationTime!! < lastMatchResult!!.creationTime)
-        Assert.assertTrue(matchResult2.creationTime!! < lastMatchResult!!.creationTime)
+        Assert.assertTrue(roundResult1.creationTime!! < lastRoundResult!!.creationTime)
+        Assert.assertTrue(roundResult2.creationTime!! < lastRoundResult!!.creationTime)
 
-        Assert.assertEquals("u1", lastMatchResult.player1Username)
-        Assert.assertEquals(2, lastMatchResult.player2CorrectAnswers)
-        Assert.assertEquals("u2", lastMatchResult.winnerName)
+        Assert.assertEquals("u1", lastRoundResult.player1Username)
+        Assert.assertEquals(2, lastRoundResult.player2CorrectAnswers)
+        Assert.assertEquals("u2", lastRoundResult.winnerName)
     }
 
 }
