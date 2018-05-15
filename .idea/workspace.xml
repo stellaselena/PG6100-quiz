@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b79647b-2859-4e9b-b0a4-e1a46c0e6074" name="Default" comment="fix wrong import &amp; config for local start">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/category/src/test/kotlin/com/stella/game/category/controller/CategoryControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/category/src/test/kotlin/com/stella/game/category/controller/CategoryControllerTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2etests/src/test/kotlin/com/stella/game/AuthFeatureIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/e2etests/src/test/kotlin/com/stella/game/e2etests/AuthFeatureIT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/player/src/test/kotlin/com/stella/game/player/PlayerControllerTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz/quiz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/quiz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplicationConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/QuizApplicationConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/controller/RoundController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/controller/RoundController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/SubcategoryApplicationConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/SubcategoryApplicationConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="356">
-              <caret line="147" column="32" lean-forward="true" selection-start-line="147" selection-start-column="32" selection-end-line="147" selection-end-column="32" />
+              <caret line="147" column="32" selection-start-line="147" selection-start-column="32" selection-end-line="147" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -65,8 +54,8 @@
       <file leaf-file-name="RoundControllerTest.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="133" column="5" lean-forward="true" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
+            <state relative-caret-position="274">
+              <caret line="132" column="32" selection-start-line="132" selection-start-column="32" selection-end-line="132" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -80,11 +69,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoundRepositoryTest.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoundRepositoryTest.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundRepositoryTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
+            <state relative-caret-position="169">
+              <caret line="247" column="17" selection-start-line="247" selection-start-column="17" selection-end-line="247" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -106,26 +104,10 @@
         <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
               <folding>
                 <element signature="e#1464#1658#0" expanded="true" />
                 <element signature="e#1657#1658#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParentRunner.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="268" selection-start-line="268" selection-end-line="268" />
-              <folding>
-                <element signature="e#2922#2923#0" expanded="true" />
-                <element signature="e#2966#2967#0" expanded="true" />
-                <element signature="e#10310#10449#0" expanded="true" />
-                <element signature="e#11040#11204#0" expanded="true" />
-                <element signature="e#11203#11204#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,7 +126,7 @@
         <entry file="jar://$MAVEN_REPOSITORY$/org/testcontainers/testcontainers/1.4.3/testcontainers-1.4.3-sources.jar!/org/testcontainers/containers/FailureDetectingExternalResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="50" column="41" lean-forward="true" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+              <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -213,7 +195,6 @@
         <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/domain/converters/RoundConverter.kt" />
         <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundConverterTest.kt" />
         <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/ControllerTestBase.kt" />
-        <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt" />
         <option value="$PROJECT_DIR$/quiz/src/main/kotlin/com/stella/game/quiz/repository/QuizRepository.kt" />
         <option value="$PROJECT_DIR$/schema/src/main/kotlin/com/stella/game/schema/gamelogic/QuizRoundDto.kt" />
         <option value="$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/domain/converters/QuestionConverter.kt" />
@@ -234,7 +215,6 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/e2etests/src/test/kotlin/com/stella/game/AuthFeatureIT.kt" />
         <option value="$PROJECT_DIR$/e2etests/pom.xml" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/gateway/src/main/kotlin/com/stella/game/gateway/WebSecurityConfig.kt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/gateway/src/main/resources/application-security.yml" />
@@ -259,6 +239,8 @@
         <option value="$PROJECT_DIR$/round/src/main/kotlin/com/stella/game/round/controller/RoundController.kt" />
         <option value="$PROJECT_DIR$/gamelogic/src/test/kotlin/com/stella/game/gamelogic/controller/GameLogicControllerTest.kt" />
         <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundRepositoryTest.kt" />
+        <option value="$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -824,7 +806,7 @@
       <workItem from="1525972822236" duration="19730000" />
       <workItem from="1526238539577" duration="11341000" />
       <workItem from="1526321926976" duration="2414000" />
-      <workItem from="1526326967538" duration="10962000" />
+      <workItem from="1526326967538" duration="12758000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1524036541862</created>
@@ -844,9 +826,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BaseModulesIT - 2018.05.14 at 16h 52m 09s.xml">
-      <configuration name="BaseModulesIT" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BaseModulesIT - 2018.05.14 at 17h 01m 32s.xml">
       <configuration name="BaseModulesIT" configurationId="JUnit" />
     </history-entry>
@@ -874,9 +853,12 @@
     <history-entry file="GameLogicDockerIT_findOpponentAndStartRound - 2018.05.14 at 18h 33m 42s.xml">
       <configuration name="GameLogicDockerIT.findOpponentAndStartRound" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameLogicDockerIT_findOpponentAndStartRound - 2018.05.15 at 14h 34m 29s.xml">
+      <configuration name="GameLogicDockerIT.findOpponentAndStartRound" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222034000" />
+    <option name="totallyTimeSpent" value="223830000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -901,17 +883,17 @@
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49779493" weight="0.45416668" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.68753374" weight="0.3943182" />
       <window_info anchor="bottom" id="Spring" order="10" weight="0.32916668" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6719956" weight="0.4318182" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.6719956" visible="true" weight="0.3284091" />
       <window_info id="Designer" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.85892856" visible="true" weight="0.2698327" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86632824" visible="true" weight="0.2698327" />
       <window_info anchor="right" id="Bean Validation" order="7" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.48511577" weight="0.225" />
-      <window_info id="Structure" order="1" sideWeight="0.14107142" side_tool="true" visible="true" weight="0.2698327" />
+      <window_info id="Structure" order="1" sideWeight="0.13367175" side_tool="true" visible="true" weight="0.2698327" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7563396" visible="true" weight="0.36363637" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7563396" weight="0.36363637" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1063,13 +1045,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application-docker.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application-security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -1260,13 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subcategory/src/main/kotlin/com/stella/game/subcategory/controller/SubcategoryController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -1367,14 +1335,14 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/testcontainers/testcontainers/1.4.3/testcontainers-1.4.3-sources.jar!/org/testcontainers/containers/FailureDetectingExternalResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="50" column="41" lean-forward="true" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gamelogic/src/main/kotlin/com/stella/game/gamelogic/controller/GameLogicController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
-          <caret line="147" column="32" lean-forward="true" selection-start-line="147" selection-start-column="32" selection-end-line="147" selection-end-column="32" />
+          <caret line="147" column="32" selection-start-line="147" selection-start-column="32" selection-end-line="147" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1392,18 +1360,11 @@
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
           <folding>
             <element signature="e#1464#1658#0" expanded="true" />
             <element signature="e#1657#1658#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="133" column="5" lean-forward="true" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1423,8 +1384,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundRepositoryTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="287" lean-forward="true" selection-start-line="287" selection-end-line="287" />
+        <state relative-caret-position="169">
+          <caret line="247" column="17" selection-start-line="247" selection-start-column="17" selection-end-line="247" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamelogic/hs_err_pid7992.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15561" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/round/src/test/kotlin/com/stella/game/round/RoundControllerTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="132" column="32" selection-start-line="132" selection-start-column="32" selection-end-line="132" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
         </state>
       </provider>
     </entry>

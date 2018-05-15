@@ -52,6 +52,16 @@ services:
       - eureka
       - postgres-category
 
+  category-server-2:
+    build:
+      context: ./category
+      dockerfile: Dockerfile
+#    ports:
+#      - "8084:8080"
+    depends_on:
+      - eureka
+      - postgres-category
+
   quiz-server:
     build:
       context: ./quiz
